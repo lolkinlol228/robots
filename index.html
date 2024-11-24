@@ -12,237 +12,11 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 
     <link href="style.css" rel="stylesheet">
-    <script>
-consile.log("hello world");
-        const references = {
-            1: "https://pioneerindsys.com/the-history-of-robotics-and-automation-a-comprehensive-timeline/",
-            2: "https://www.intellspot.com/what-is-robotics/",
-            3: "https://keybotic.com/history-of-robotics-a-comprehensive-history-of-evolution-and-innovation/",
-            4: "https://www.pcworld.com/article/469885/historys_10_most_influential_robots.html",
-            5: "https://techietory.com/robotics/the-history-of-robotics-from-ancient-times-to-modern-innovations/",
-            6: "https://www.uti.edu/blog/robotics-and-automation/robotics-basics",
-            7: "https://en.wikipedia.org/wiki/History_of_robots",
-            8: "https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-ai",
-            9: "https://iabac.org/blog/differences-between-robotics-and-artificial-intelligence",
-            10: "https://www.techtarget.com/whatis/definition/robotics",
-            11: "https://aiforsocialgood.ca/blog/artificial-intelligence-and-robotics-a-battle-for-technological-supremacy",
-            12: "https://www.coursera.org/articles/what-is-artificial-intelligence",
-            13: "https://builtin.com/artificial-intelligence",
-            14: "https://en.wikipedia.org/wiki/Artificial_intelligence",
-            15: "https://www.mckinsey.com/capabilities/operations/our-insights/human-plus-machine-a-new-era-of-automation-in-manufacturing",
-            16: "https://www.forbes.com/sites/bernardmarr/2023/05/10/15-amazing-real-world-applications-of-ai-everyone-should-know-about/",
-            17: "https://allyrobotics.com/artificial-intelligence-vs-robotics/",
-            18: "https://copperdigital.com/blog/ethical-implications-ai-decision-making-manufacturing/",
-            19: "https://plato.stanford.edu/entries/ethics-ai/",
-            20: "https://journalofethics.ama-assn.org/article/how-should-surgeons-consider-emerging-innovations-artificial-intelligence-and-robotics/2023-08",
-            21: "https://www.brookings.edu/articles/countering-the-geographical-impacts-of-automation-computers-ai-and-place-disparities/",
-            22: "https://www.chicagofed.org/publications/blogs/chicago-fed-insights/2023/the-automation-of-jobs",
-            23: "https://ai100.stanford.edu/gathering-strength-gathering-storms-one-hundred-year-study-artificial-intelligence-ai100-2021-1-1",
-            24: "https://blogs.cdc.gov/niosh-science-blog/2022/02/15/tjd-fow/",
-            25: "https://tcf.org/content/report/robots-beginning-affect-workers-wages/",
-            26: "https://toolingideas.com/what-are-the-key-components-and-features-of-a-robot/",
-            27: "https://www.frontiersin.org/journals/neurorobotics/articles/10.3389/fnbot.2023.1084000/full",
-            28: "https://www.frontiersin.org/journals/neurorobotics/articles/10.3389/fnbot.2023.1084000/full",
-            29: "https://techietory.com/robotics/understanding-robot-anatomy-essential-components-explained/",
-            30: "https://www.vaia.com/en-us/explanations/engineering/robotics-engineering/robot-sensors/",
-            31: "https://roboticsbiz.com/sensors-in-robotics-7-common-sensors-used-in-robots/",
-            32: "https://www.mckinsey.com/capabilities/operations/our-insights/automation-robotics-and-the-factory-of-the-future",
-            33: "https://www.vaia.com/en-us/explanations/engineering/mechanical-engineering/robotic-sensors/",
-            34: "https://www.v7labs.com/blog/ai-in-robotics",
-            35: "https://builtin.com/robotics"
-        };
-        
-        function convertReferencesToLinksInBody() {
-    document.body.innerHTML = document.body.innerHTML.replace(/\[(\d+)\]/g, (match, number) => {
-        const url = references[number];
-        if (url) {
-            return `<a href="${url}" target="_blank">${match}</a>`;
-        }
-        return match;
-    });
-}
-
-document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
-
-    </script>
-    <style>
   
-        .quiz-section {
-            background: white;
-            padding: 2rem;
-            border-radius: 1rem;
-            box-shadow: var(--card-shadow);
-            margin: 2rem 0;
-        }
-    
-        .quiz-question {
-            font-size: 1.2rem;
-            font-weight: 500;
-            margin-bottom: 1.5rem;
-            text-align: center;
-        }
-    
-        .quiz-options {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-            margin-bottom: 1.5rem;
-        }
-    
-        .quiz-option {
-            padding: 1rem;
-            border: 2px solid #e5e7eb;
-            border-radius: 0.5rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-align: center;
-        }
-    
-        .quiz-option:hover {
-            border-color: #2563eb;
-            transform: translateY(-2px);
-        }
-    
-        .quiz-option.correct {
-            background: #dcfce7;
-            border-color: #22c55e;
-        }
-    
-        .quiz-option.wrong {
-            background: #fee2e2;
-            border-color: #ef4444;
-        }
-    </style>
-    
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f8f9fa;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        body.dark-mode {
-            background-color: #121212;
-            color: #ffffff;
-        }
-        header {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-        }
-        .carousel-inner img {
-            width: 100%;
-            height: 100vh;
-            object-fit: cover;
-        }
-        .carousel-caption {
-            background: rgba(0, 0, 0, 0.5);
-            padding: 20px;
-            border-radius: 10px;
-        }
-        nav.navbar {
-            transition: background-color 0.3s;
-        }
-        nav.navbar.sticky {
-            background-color: rgba(52, 58, 64, 0.95) !important;
-            transition: background-color 0.3s;
-        }
-        section {
-            padding: 60px 0;
-        }
-        section h2 {
-            margin-bottom: 30px;
-            position: relative;
-            font-family: 'Montserrat', sans-serif;
-        }
-        
-        footer {
-            background-color: #343a40;
-            color: white;
-            padding: 40px 0;
-            text-align: center;
-        }
-        .icon {
-            font-size: 2rem;
-            color: #0d6efd;
-            margin-bottom: 20px;
-        }
-        .dark-mode nav.navbar {
-            background-color: rgba(18, 18, 18, 0.95) !important;
-        }
-
-        body::-webkit-scrollbar {
-  display: none; 
-}
-
-
-        #backToTop {
-    display: none; 
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 100;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 40%;
-    padding: 10px 15px;
-    cursor: pointer;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    font-size: 18px;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-#backToTop:hover {
-    background-color: #0056b3; 
-    transform: scale(1.1); 
-}
-
-#backToTop:active {
-    transform: scale(0.95);
-}
-
-
-        .theme-switch {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 1001;
-        }
-        .theme-switch input {
-            display: none;
-        }
-        .theme-switch label {
-            cursor: pointer;
-            text-indent: -9999px;
-            width: 50px;
-            height: 25px;
-            background: grey;
-            display: block;
-            border-radius: 100px;
-            position: relative;
-        }
-        .theme-switch label:after {
-            content: '';
-            position: absolute;
-            top: 2px;
-            left: 2px;
-            width: 21px;
-            height: 21px;
-            background: #fff;
-            border-radius: 90px;
-            transition: 0.3s;
-        }
-        .theme-switch input:checked + label {
-            background: #0d6efd;
-        }
-        .theme-switch input:checked + label:after {
-            left: calc(100% - 2px);
-            transform: translateX(-100%);
-        }
-    </style>
+ 
 </head>
 <body>
     <script>
@@ -260,21 +34,21 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
         <div id="headerCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="https://controleng.ru/wp-content/uploads/12_77_00.jpg" class="d-block w-100" alt="Robot AI">
+                    <img src="/images/1.jpg" class="d-block w-100" alt="Robot AI">
                     <div class="carousel-caption d-none d-md-block">
                         <h1 class="text-white">Робототехника и Искусственный Интеллект</h1>
                         <p class="text-white">Будущее технологий уже здесь.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="https://cdn.media.amplience.net/i/epammarketplace/open_source_license_header?v=211806184287" class="d-block w-100" alt="Automation Technology">
+                    <img src="/images/2.jpg" class="d-block w-100" alt="Automation Technology">
                     <div class="carousel-caption d-none d-md-block">
                         <h1 class="text-white">Инновации и Развитие</h1>
                         <p class="text-white">Эволюция в каждой детали.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="https://www.pragmaworld.net/wp-content/uploads/AdobeStock_199772135-scaled.jpeg" class="d-block w-100" alt="Future Robot">
+                    <img src="/images/3.webp" class="d-block w-100" alt="Future Robot">
                     <div class="carousel-caption d-none d-md-block">
                         <h1 class="text-white">Будущее уже наступило</h1>
                         <p class="text-white">Умные машины, умные решения.</p>
@@ -302,7 +76,7 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#summary">Резюме</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#summary">О сайте</a></li>
                     <li class="nav-item"><a class="nav-link" href="#history">История</a></li>
                     <li class="nav-item"><a class="nav-link" href="#robot-types">Типы роботов</a></li>
                     <li class="nav-item"><a class="nav-link" href="#ai-types">Типы ИИ</a></li>
@@ -321,134 +95,152 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
 
 
 
-        <section id="summary" data-aos="fade-up" style="margin-top: -5% ;">
-            <h2 class="section-title"><i class="fas fa-lightbulb icon"></i>Резюме</h2>
-            <div class="decorative-line"></div>
-        </div>
-        <div class="intro-card" style="margin-top: -10%;">
-            <p class="intro-text">
-            Робототехника и искусственный интеллект (ИИ) - это инновационные области, в которых проектирование машин, способных выполнять задачи автономно, сочетается с разработкой интеллектуальных алгоритмов, позволяющих обрабатывать данные и учиться на собственном опыте. Вместе эти технологии меняют отрасли, повышают производительность и изменяют повседневную жизнь, что делает их ключевыми для современных инноваций и экономического роста.
-            пьесе Карела"R.U.R." в 1920 году и разработка первого промышленного робота в 1960-х годах, что ознаменовало начало автоматизированного труда на производстве.[1][2][3].
-        Заметные достижения в области робототехники и искусственного интеллекта привели к широкому применению в различных отраслях, включая здравоохранение, транспорт и развлечения. Например, роботы с искусственным интеллектом помогают в хирургических операциях, повышая точность и улучшая результаты лечения пациентов, а автономные автомобили совершают революцию в транспортной сфере.
-         
-        Однако быстрое распространение этих технологий также подняло важнейшие этические и общественные вопросы, в частности, касающиеся конфиденциальности, перемещения рабочих мест и экономического неравенства[6][7][8].
-        По мере развития робототехники и искусственного интеллекта возникают серьезные противоречия, связанные с их влиянием на рынки труда и этическими рамками, регулирующими их использование. Многие эксперты утверждают, что, хотя ИИ может повысить эффективность и инновации, он также несет в себе риск усугубления существующего неравенства и создания новых форм предвзятости в процессах принятия решений[9][10]. Решение этих проблем требует совместных усилий политиков, технологов и специалистов по этике для разработки руководящих принципов, способствующих ответственному и справедливому внедрению этих преобразующих технологий[11].
-        Таким образом, робототехника и искусственный интеллект находятся в авангарде технологической революции, предлагая огромный потенциал для улучшения жизни людей, но в то же время требуя критического обсуждения их этических последствий и воздействия на общество. По мере развития этих областей понимание и решение присущих им проблем будет иметь решающее значение для обеспечения того, чтобы их преимущества реализовывались на честной и справедливой основе.
-    </p>
-</div>
-        </section>
-    </div>
-    </section>
-    <section id="history" class="history-section bg-light" data-aos="fade-up">
-        <div class="section-header">
-            <h2 class="section-title"><i class="fas fa-history icon"></i>История</h2>
-            <div class="decorative-line"></div>
-        </div>
-        <div class="intro-card">
-            <p class="intro-text">
-                История робототехники - это увлекательное путешествие, охватывающее тысячи лет и отражающее постоянное стремление человечества к созданию машин, способных выполнять задачи автономно или полуавтономно. Эта эволюция прослеживается с древних цивилизаций и доходит до современных передовых технологий, которые позволяют реализовать практически все аспекты современной жизни.
-            </p>
-        </div>
-        
-        <div class="history-card">
-            <div class="card-header" onclick="toggleSection(this)">
-                <h3 class="card-title">Древние инновации</h3>
-                <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                    <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-            <div class="card-content">
-                <div class="card-body">
-                    <p class="card-text">
-                        Концепция робототехники берет свое начало в древних автоматах - сложных механических устройствах, созданных искусными мастерами, которые завораживали общество своими реалистичными движениями. Один из самых ранних известных примеров - Антикитерский механизм, древнегреческий аналоговый компьютер, датируемый II веком до н. э., который использовался для астрономических предсказаний и демонстрирует раннее увлечение автоматизацией и инженерией[1][2].
+            <section id="summary" data-aos="fade-up" style="margin-top: -5%;">
+                <h2 class="section-title"><i class="fas fa-lightbulb icon"></i>О сайте</h2>
+                <div class="decorative-line"></div>
+                <div class="intro-card" style="margin-top: -10%;">
+                    <p class="intro-text">
+                        <strong>Робототехника и искусственный интеллект (ИИ)</strong> - это инновационные области, в которых проектирование машин, способных выполнять задачи автономно, сочетается с разработкой интеллектуальных алгоритмов, позволяющих обрабатывать данные и учиться на собственном опыте. Вместе эти технологии меняют отрасли, повышают производительность и изменяют повседневную жизнь, что делает их ключевыми для современных инноваций и экономического роста.
                     </p>
-                    <div class="fact-box">
-                        <p class="fact-text">
-                            Интересный факт: Антикитерский механизм считается самым древним известным аналоговым компьютером в мире.
-                        </p>
+                    <p class="intro-text">
+                        Начало развития робототехники можно проследить с пьесы Карела "R.U.R." в 1920 году и разработки первого промышленного робота в 1960-х годах, что ознаменовало начало автоматизированного труда на производстве.[1][2][3]
+                    </p>
+                    <p class="intro-text">
+                        Заметные достижения в области робототехники и искусственного интеллекта привели к широкому применению в различных отраслях, включая здравоохранение, транспорт и развлечения. Например, роботы с искусственным интеллектом помогают в хирургических операциях, повышая точность и улучшая результаты лечения пациентов, а автономные автомобили совершают революцию в транспортной сфере.
+                    </p>
+                    <p class="intro-text">
+                        Однако быстрое распространение этих технологий также подняло важнейшие этические и общественные вопросы, в частности, касающиеся конфиденциальности, перемещения рабочих мест и экономического неравенства.[6][7][8]
+                    </p>
+                    <p class="intro-text">
+                        По мере развития робототехники и искусственного интеллекта возникают серьезные противоречия, связанные с их влиянием на рынки труда и этическими рамками, регулирующими их использование. Многие эксперты утверждают, что, хотя ИИ может повысить эффективность и инновации, он также несет в себе риск усугубления существующего неравенства и создания новых форм предвзятости в процессах принятия решений.[9][10]
+                    </p>
+                    <p class="intro-text">
+                        Решение этих проблем требует совместных усилий политиков, технологов и специалистов по этике для разработки руководящих принципов, способствующих ответственному и справедливому внедрению этих преобразующих технологий.[11]
+                    </p>
+                    <p class="intro-text">
+                        Таким образом, робототехника и искусственный интеллект находятся в авангарде технологической революции, предлагая огромный потенциал для улучшения жизни людей, но в то же время требуя критического обсуждения их этических последствий и воздействия на общество. По мере развития этих областей понимание и решение присущих им проблем будет иметь решающее значение для обеспечения того, чтобы их преимущества реализовывались на честной и справедливой основе.
+                    </p>
+                </div>
+            </section>
+            </div>
+            </section>
+            <section id="history" class="history-section bg-light" data-aos="fade-up">
+                <div class="section-header">
+                    <h2 class="section-title"><i class="fas fa-history icon"></i> История</h2>
+                    <div class="decorative-line"></div>
+                </div>
+                <div class="intro-card">
+                    <p class="intro-text">
+                        История робототехники - это увлекательное путешествие, охватывающее тысячи лет и отражающее постоянное стремление человечества к созданию машин, способных выполнять задачи автономно или полуавтономно. Эта эволюция прослеживается с древних цивилизаций и доходит до современных передовых технологий, которые позволяют реализовать практически все аспекты современной жизни.
+                    </p>
+                </div>
+                
+                <div class="history-card">
+                    <div class="card-header" onclick="toggleSection(this)">
+                        <h3 class="card-title">Древние инновации</h3>
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-body">
+                            <p class="card-text">
+                                Концепция робототехники берет свое начало в древних автоматах - сложных механических устройствах, созданных искусными мастерами, которые завораживали общество своими реалистичными движениями. Один из самых ранних известных примеров - <strong>Антикитерский механизм</strong>, древнегреческий аналоговый компьютер, датируемый II веком до н. э., который использовался для астрономических предсказаний и демонстрирует раннее увлечение автоматизацией и инженерией.[1][2]
+                            </p>
+                            <div class="fact-box">
+                                <p class="fact-text">
+                                    <em>Интересный факт:</em> Антикитерский механизм считается самым древним известным аналоговым компьютером в мире.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="development" class="history-section" data-aos="fade-up">
-        <div class="section-header">
-            <h2 class="section-title"><i class="fas fa-chart-line icon"></i>Развитие робототехники</h2>
-            <div class="decorative-line"></div>
-        </div>
-        <div class="intro-card">
-            <p class="intro-text">
-                Промышленная революция в XVIII веке стала поворотным моментом в развитии робототехники. Эта эпоха механизации, характеризующаяся такими инновациями, как паровые двигатели и механические ткацкие станки, заложила основу для будущих достижений. Такие изобретатели, как Ричард Аркрайт и Джеймс Уатт, сыграли решающую роль в создании машин, которые впоследствии превратились в ранние роботизированные системы[2][3].
-            </p>
-        </div>
-    
-        <div class="history-card">
-            <div class="card-header" onclick="toggleSection(this)">
-                <h3 class="text-3xl font-bold mb-6 text-gray-900 dark:text-white">Рождение термина "робот"</h3>
-                <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                    <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-            <div class="card-content">
-                <div class="card-body">
-                    <p class="card-text">
-                        Термин "робот" был популяризирован в пьесе 1920 года "R.U.R." (Универсальные роботы Россама), написанной Карелом Чапеком. Эта пьеса стала важной культурной вехой, поскольку представила концепцию искусственных существ, созданных для того, чтобы служить людям, вызвав как восхищение, так и этические дискуссии о последствиях создания автономных машин[3].
+            </section>
+            
+            <section id="development" class="history-section" data-aos="fade-up">
+                <div class="section-header">
+                    <h2 class="section-title"><i class="fas fa-chart-line icon"></i> Развитие робототехники</h2>
+                    <div class="decorative-line"></div>
+                </div>
+                <div class="intro-card">
+                    <p class="intro-text">
+                        <strong>Промышленная революция в XVIII веке</strong> стала поворотным моментом в развитии робототехники. Эта эпоха механизации, характеризующаяся такими инновациями, как паровые двигатели и механические ткацкие станки, заложила основу для будущих достижений. Такие изобретатели, как Ричард Аркрайт и Джеймс Уатт, сыграли решающую роль в создании машин, которые впоследствии превратились в ранние роботизированные системы.[2][3]
                     </p>
-                    <div class="fact-box">
-                        <p class="fact-text">
-                            Интересный факт: Слово "робот" происходит от чешского слова "robota", что означает принудительный труд.
-                        </p>
+                </div>
+            
+                <div class="history-card">
+                    <div class="card-header" onclick="toggleSection(this)">
+                        <h3 class="card-title">Рождение термина "робот"</h3>
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-body">
+                            <p class="card-text">
+                                Термин "робот" был популяризирован в пьесе 1920 года <em>"R.U.R."</em> (Универсальные роботы Россама), написанной Карелом Чапеком. Эта пьеса стала важной культурной вехой, поскольку представила концепцию искусственных существ, созданных для того, чтобы служить людям, вызвав как восхищение, так и этические дискуссии о последствиях создания автономных машин.[3]
+                            </p>
+                            <div class="fact-box">
+                                <p class="fact-text">
+                                    <em>Интересный факт:</em> Слово "робот" происходит от чешского слова "robota", что означает принудительный труд.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    
-        <div class="history-card">
-            <div class="card-header" onclick="toggleSection(this)">
-                <h3 class="text-3xl font-bold mb-6 text-gray-900 dark:text-white">События середины XX века</h3>
-                <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                    <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-            <div class="card-content">
-                <div class="card-body">
-                    <p class="card-text">
-                        В 1960-х годах были достигнуты значительные успехи в исследованиях в области робототехники, особенно в разработке роботизированных рук. Одной из самых заметных новинок стал Unimate изобретателя Джорджа Девола, который стал первым промышленным роботом, использовавшимся на сборочной линии General Motors. Этот робот был разработан для выполнения повторяющихся задач, повышая тем самым безопасность и эффективность труда[4]. Примерно в то же время робот Шейки, разработанный компанией SRI International, стал одним из первых роботов с искусственным интеллектом, способных понимать свои действия и автономно планировать задачи, демонстрируя первые достижения в области искусственного интеллекта[4].
-                    </p>
-                    <div class="fact-box">
-                        <p class="fact-text">
-                            Интересный факт: Unimate, первый промышленный робот, начал работать на сборочной линии General Motors в 1961 году, выполняя задачи сварки кузовов автомобилей.
-                        </p>
+            
+                <div class="history-card">
+                    <div class="card-header" onclick="toggleSection(this)">
+                        <h3 class="card-title">События середины XX века</h3>
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-body">
+                            <p class="card-text">
+                                В 1960-х годах были достигнуты значительные успехи в исследованиях в области робототехники, особенно в разработке роботизированных рук. Одной из самых заметных новинок стал <strong>Unimate</strong> изобретателя Джорджа Девола, который стал первым промышленным роботом, использовавшимся на сборочной линии General Motors. Этот робот был разработан для выполнения повторяющихся задач, повышая тем самым безопасность и эффективность труда.[4]
+                            </p>
+                            <p class="card-text">
+                                Примерно в то же время робот Шейки, разработанный компанией SRI International, стал одним из первых роботов с искусственным интеллектом, способных понимать свои действия и автономно планировать задачи, демонстрируя первые достижения в области искусственного интеллекта.[4]
+                            </p>
+                            <div class="fact-box">
+                                <p class="fact-text">
+                                    <em>Интересный факт:</em> Unimate, первый промышленный робот, начал работать на сборочной линии General Motors в 1961 году, выполняя задачи сварки кузовов автомобилей.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    
-        <div class="history-card">
-            <div class="card-header" onclick="toggleSection(this)">
-                <h3 class="text-3xl font-bold mb-6 text-gray-900 dark:text-white">Конец XX века - настоящее время</h3>
-                <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                    <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-            <div class="card-content">
-                <div class="card-body">
-                    <p class="card-text">
-                        В XX веке робототехника вышла за рамки промышленного применения и стала использоваться в здравоохранении, развлечениях и освоении космоса. Внедрение роботов в медицину, например, роботизированной руки PUMA 560, используемой для проведения операций в 1980-х годах, продемонстрировало потенциал робототехники для повышения точности медицинских процедур[5][6].
-                    </p>
-                    <p class="card-text">
-                        В 2010-х годах робототехника стала еще более активно внедряться в повседневную жизнь, что было отмечено повышением доступности и универсальности робототехнических компонентов. Этот период также вызвал оптимизм и озабоченность по поводу социальных последствий широкого распространения робототехники, а также дискуссии об этике искусственного интеллекта и необходимости таких рамок, как Билль о правах ИИ, для обеспечения ответственного развития[7][8]. Эволюция робототехники характеризовалась постоянным стремлением повторить человеческие возможности, прокладывая путь к созданию передовых машин, которые не только помогают выполнять задачи, но и обогащают жизнь человека.
-                    </p>
-                    <div class="fact-box">
-                        <p class="fact-text">
-                            Интересный факт: Роботизированная рука PUMA 560 была одной из первых роботов, используемых в хирургических операциях, значительно повысив точность и безопасность медицинских процедур.
-                        </p>
+            
+                <div class="history-card">
+                    <div class="card-header" onclick="toggleSection(this)">
+                        <h3 class="card-title">Конец XX века - настоящее время</h3>
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-body">
+                            <p class="card-text">
+                                В XX веке робототехника вышла за рамки промышленного применения и стала использоваться в здравоохранении, развлечениях и освоении космоса. Внедрение роботов в медицину, например, роботизированной руки <strong>PUMA 560</strong>, используемой для проведения операций в 1980-х годах, продемонстрировало потенциал робототехники для повышения точности медицинских процедур.[5][6]
+                            </p>
+                            <p class="card-text">
+                                В 2010-х годах робототехника стала ещё более активно внедряться в повседневную жизнь, что было отмечено повышением доступности и универсальности робототехнических компонентов. Этот период также вызвал оптимизм и озабоченность по поводу социальных последствий широкого распространения робототехники, а также дискуссии об этике искусственного интеллекта и необходимости таких рамок, как Билль о правах ИИ, для обеспечения ответственного развития.[7][8]
+                            </p>
+                            <p class="card-text">
+                                Эволюция робототехники характеризовалась постоянным стремлением повторить человеческие возможности, прокладывая путь к созданию передовых машин, которые не только помогают выполнять задачи, но и обогащают жизнь человека.
+                            </p>
+                            <div class="fact-box">
+                                <p class="fact-text">
+                                    <em>Интересный факт:</em> Роботизированная рука PUMA 560 была одной из первых роботов, используемых в хирургических операциях, значительно повысив точность и безопасность медицинских процедур.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
+            
     
     
         <div id="section2"></div>
@@ -458,7 +250,7 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
         <div id="section12"></div>
         <section id="robot-types" class="history-section bg-light" data-aos="fade-up">
             <div class="section-header">
-                <h2 class="section-title"><i class="fas fa-robot icon"></i>Виды робототехники</h2>
+                <h2 class="section-title"><i class="fas fa-robot icon"></i> Виды робототехники</h2>
                 <div class="decorative-line"></div>
             </div>
             <div class="intro-card">
@@ -467,7 +259,6 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
                 </p>
             </div>
         
-      
             <div class="history-card">
                 <div class="card-header" onclick="toggleSection(this)" role="button" aria-expanded="false" aria-controls="industrial-robots">
                     <h3 class="text-3xl font-bold mb-6 text-gray-900 dark:text-white">Промышленные роботы</h3>
@@ -477,20 +268,19 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
                 </div>
                 <div id="industrial-robots" class="card-content" aria-hidden="true">
                     <div class="card-body">
-                        <img src="https://vektorus.ru/image/data/articles/reviews/promyshlennaya-robototehnika/1607598716KCfmgVWCi1_1.jpg" class="card-img-top" alt="Промышленные роботы">
+                        <img src="/images/4.jpg" class="card-img-top" alt="Промышленные роботы">
                         <p class="card-text">
-                            Промышленные роботы широко используются в производстве и на производстве. Они известны своей точностью, скоростью и способностью выполнять повторяющиеся задачи. Частыми примерами являются шарнирные роботы, имеющие поворотные шарниры, и роботы с шарнирным манипулятором Selective Compliance Articulated Robot Arm (SCARA), часто используемые для выполнения задач на сборочных линиях. На заводах эти роботы выполняют различные задачи, такие как сварка, покраска и обработка материалов, повышая эффективность и точность в условиях массового производства[9][6].
+                            Промышленные роботы широко используются в производстве и на производстве. Они известны своей точностью, скоростью и способностью выполнять повторяющиеся задачи. Частыми примерами являются шарнирные роботы, имеющие поворотные шарниры, и роботы с шарнирным манипулятором <strong>Selective Compliance Articulated Robot Arm (SCARA)</strong>, часто используемые для выполнения задач на сборочных линиях. На заводах эти роботы выполняют различные задачи, такие как сварка, покраска и обработка материалов, повышая эффективность и точность в условиях массового производства.[9][6]
                         </p>
                         <div class="fact-box">
                             <p class="fact-text">
-                                Интересный факт: SCARA-роботы могут выполнять до 1000 операций в час, что значительно превышает производительность человека в аналогичных условиях.
+                                <em>Интересный факт:</em> SCARA-роботы могут выполнять до 1000 операций в час, что значительно превышает производительность человека в аналогичных условиях.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         
-          
             <div class="history-card">
                 <div class="card-header" onclick="toggleSection(this)" role="button" aria-expanded="false" aria-controls="service-robots">
                     <h3 class="text-3xl font-bold mb-6 text-gray-900 dark:text-white">Сервисные роботы</h3>
@@ -500,20 +290,19 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
                 </div>
                 <div id="service-robots" class="card-content" aria-hidden="true">
                     <div class="card-body">
-                        <img src="https://trashbox.ru/ifiles/2010112_43815a_logo.webp.png-orig/afera-veka-roboty-ilona-maska-na-samom-dele-ne-avtonomnye-4.jpg" class="card-img-top" alt="Сервисные роботы">
+                        <img src="/images/5.webp" class="card-img-top" alt="Сервисные роботы">
                         <p class="card-text text-gray-600 dark:text-gray-300">
-                            Сервисные роботы работают в различных отраслях, включая здравоохранение, гостиничный бизнес и бытовое обслуживание. Они взаимодействуют с людьми, помогая им в повседневной деятельности. В качестве примера можно привести бытовых роботов, таких как роботы-пылесосы, и медицинских роботов, используемых в хирургических операциях. В здравоохранении сервисные роботы улучшают уход за пациентами, предоставляя инструменты и контролируя жизненные показатели пациентов во время операций[6][10].
+                            Сервисные роботы работают в различных отраслях, включая здравоохранение, гостиничный бизнес и бытовое обслуживание. Они взаимодействуют с людьми, помогая им в повседневной деятельности. В качестве примера можно привести бытовых роботов, таких как роботы-пылесосы, и медицинских роботов, используемых в хирургических операциях. В здравоохранении сервисные роботы улучшают уход за пациентами, предоставляя инструменты и контролируя жизненные показатели пациентов во время операций.[6][10]
                         </p>
                         <div class="fact-box">
                             <p class="fact-text">
-                                Интересный факт: Медицинские роботы Da Vinci позволяют проводить операции с минимальными разрезами, что сокращает время восстановления пациентов на 30%.
+                                <em>Интересный факт:</em> Медицинские роботы Da Vinci позволяют проводить операции с минимальными разрезами, что сокращает время восстановления пациентов на 30%.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         
-
             <div class="history-card">
                 <div class="card-header" onclick="toggleSection(this)" role="button" aria-expanded="false" aria-controls="medical-robots">
                     <h3 class="text-3xl font-bold mb-6 text-gray-900 dark:text-white">Медицинские роботы</h3>
@@ -523,20 +312,19 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
                 </div>
                 <div id="medical-robots" class="card-content" aria-hidden="true">
                     <div class="card-body">
-                        <img src="https://habrastorage.org/getpro/habr/upload_files/de3/af3/649/de3af3649454fe5f1fbdff47cc475d77.png" class="card-img-top" alt="Медицинские роботы" >
+                        <img src="/images/6.png" class="card-img-top" alt="Медицинские роботы">
                         <p class="card-text text-gray-600 dark:text-gray-300">
-                            Медицинские роботы - это специализированные системы, предназначенные для оказания помощи в медицинских учреждениях. Они играют важнейшую роль в хирургических операциях, реабилитации и диагностике. В качестве примера можно привести роботизированные хирургические системы, экзоскелеты для реабилитации и вспомогательные устройства, такие как роботизированные конечности. Эти роботы повышают точность и эффективность медицинских вмешательств, что в конечном итоге улучшает результаты лечения пациентов[10].
+                            Медицинские роботы - это специализированные системы, предназначенные для оказания помощи в медицинских учреждениях. Они играют важнейшую роль в хирургических операциях, реабилитации и диагностике. В качестве примера можно привести роботизированные хирургические системы, экзоскелеты для реабилитации и вспомогательные устройства, такие как роботизированные конечности. Эти роботы повышают точность и эффективность медицинских вмешательств, что в конечном итоге улучшает результаты лечения пациентов.[10]
                         </p>
                         <div class="fact-box">
                             <p class="fact-text">
-                                Интересный факт: Роботы-хирурги Da Vinci могут выполнять операции с точностью до 0.1 мм, что значительно превышает возможности человеческой руки.
+                                <em>Интересный факт:</em> Роботы-хирурги Da Vinci могут выполнять операции с точностью до 0.1 мм, что значительно превышает возможности человеческой руки.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         
-    
             <div class="history-card">
                 <div class="card-header" onclick="toggleSection(this)" role="button" aria-expanded="false" aria-controls="humanoid-robots">
                     <h3 class="text-3xl font-bold mb-6 text-gray-900 dark:text-white">Гуманоидные роботы</h3>
@@ -546,20 +334,19 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
                 </div>
                 <div id="humanoid-robots" class="card-content" aria-hidden="true">
                     <div class="card-body">
-                        <img src="https://sdelanounas.ru/i/c/2/n/f_c2NpZW50aWZpY3J1c3NpYS5ydS9pbWFnZXMvaC8yZGZoLWZ1bGwuanBnP19faWQ9MTQ1Mjk2.jpeg" class="card-img-top" alt="Гуманоидные роботы">
+                        <img src="/images/7.jpeg" class="card-img-top" alt="Гуманоидные роботы">
                         <p class="card-text text-gray-600 dark:text-gray-300">
-                            Гуманоидные роботы предназначены для имитации человеческих движений и действий. Эти роботы внешне похожи на людей и используются в научных исследованиях, развлечениях и взаимодействии человека и робота. Их способность копировать человеческое поведение делает их ценными для изучения взаимодействия человека и робота и социального взаимодействия[10].
+                            Гуманоидные роботы предназначены для имитации человеческих движений и действий. Эти роботы внешне похожи на людей и используются в научных исследованиях, развлечениях и взаимодействии человека и робота. Их способность копировать человеческое поведение делает их ценными для изучения взаимодействия человека и робота и социального взаимодействия.[10]
                         </p>
                         <div class="fact-box">
                             <p class="fact-text">
-                                Интересный факт: Гуманоидные роботы, такие как Honda ASIMO, могут выполнять более 120 различных движений, включая бег, танцы и взаимодействие с объектами.
+                                <em>Интересный факт:</em> Гуманоидные роботы, такие как Honda ASIMO, могут выполнять более 120 различных движений, включая бег, танцы и взаимодействие с объектами.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         
-      
             <div class="history-card">
                 <div class="card-header" onclick="toggleSection(this)" role="button" aria-expanded="false" aria-controls="autonomous-vehicles">
                     <h3 class="text-3xl font-bold mb-6 text-gray-900 dark:text-white">Автономные транспортные средства</h3>
@@ -569,20 +356,19 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
                 </div>
                 <div id="autonomous-vehicles" class="card-content" aria-hidden="true">
                     <div class="card-body">
-                        <img src="https://secberg.com/wp-content/uploads/2023/08/FdxF01MXEAABqZG-1.jpeg" class="card-img-top" alt="Автономные транспортные средства" style="height: 265px !important;">
+                        <img src="/images/8.jpeg" class="card-img-top" alt="Автономные транспортные средства" style="height: 265px !important;">
                         <p class="card-text text-gray-600 dark:text-gray-300">
-                            Автономные транспортные средства - это роботы, используемые в основном в транспортных целях. В эту категорию входят самоуправляемые автомобили, беспилотники и автономные роботы-доставщики. Они ориентируются и принимают решения с помощью современных датчиков и алгоритмов искусственного интеллекта, что позволяет им работать с минимальным вмешательством человека. Интеграция робототехники и искусственного интеллекта в этой области прокладывает путь к более безопасным и эффективным транспортным решениям[11].
+                            Автономные транспортные средства - это роботы, используемые в основном в транспортных целях. В эту категорию входят самоуправляемые автомобили, беспилотники и автономные роботы-доставщики. Они ориентируются и принимают решения с помощью современных датчиков и алгоритмов искусственного интеллекта, что позволяет им работать с минимальным вмешательством человека. Интеграция робототехники и искусственного интеллекта в этой области прокладывает путь к более безопасным и эффективным транспортным решениям.[11]
                         </p>
                         <div class="fact-box">
                             <p class="fact-text">
-                                Интересный факт: Самоуправляемые автомобили могут анализировать более 100 различных параметров окружающей среды в реальном времени, что позволяет им принимать быстрые и точные решения.
+                                <em>Интересный факт:</em> Самоуправляемые автомобили могут анализировать более 100 различных параметров окружающей среды в реальном времени, что позволяет им принимать быстрые и точные решения.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         
-
             <div class="history-card">
                 <div class="card-header" onclick="toggleSection(this)" role="button" aria-expanded="false" aria-controls="mobile-robots">
                     <h3 class="text-3xl font-bold mb-6 text-gray-900 dark:text-white">Мобильные роботы</h3>
@@ -592,20 +378,19 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
                 </div>
                 <div id="mobile-robots" class="card-content" aria-hidden="true">
                     <div class="card-body">
-                        <img src="https://top3dshop.ru/image/data/articles/reviews_8/mobile-robots-types-and-applications/Image08.png" class="card-img-top" alt="Мобильные роботы">
+                        <img src="/images/9.png" class="card-img-top" alt="Мобильные роботы">
                         <p class="card-text text-gray-600 dark:text-gray-300">
-                            Мобильные роботы предназначены для автономного перемещения по различным средам. В эту категорию входят роботы-газонокосилки, роботы-доставщики и разведывательные дроны. Оснащенные датчиками и навигационными системами, мобильные роботы могут преодолевать сложные участки местности и выполнять задачи без непосредственного контроля со стороны человека, что делает их полезными как в коммерческих, так и в жилых приложениях[11].
+                            Мобильные роботы предназначены для автономного перемещения по различным средам. В эту категорию входят роботы-газонокосилки, роботы-доставщики и разведывательные дроны. Оснащенные датчиками и навигационными системами, мобильные роботы могут преодолевать сложные участки местности и выполнять задачи без непосредственного контроля со стороны человека, что делает их полезными как в коммерческих, так и в жилых приложениях.[11]
                         </p>
                         <div class="fact-box">
                             <p class="fact-text">
-                                Интересный факт: Роботы-доставщики могут доставлять посылки в течение часа после заказа, значительно сокращая время доставки по сравнению с традиционными методами.
+                                <em>Интересный факт:</em> Роботы-доставщики могут доставлять посылки в течение часа после заказа, значительно сокращая время доставки по сравнению с традиционными методами.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         
-      
             <div class="history-card">
                 <div class="card-header" onclick="toggleSection(this)" role="button" aria-expanded="false" aria-controls="cobots">
                     <h3 class="text-3xl font-bold mb-6 text-gray-900 dark:text-white">Коллаборативные роботы (Cobots)</h3>
@@ -615,36 +400,32 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
                 </div>
                 <div id="cobots" class="card-content" aria-hidden="true">
                     <div class="card-body">
-                        <img src="https://vektorus.ru/image/data/articles/reviews/kollaborativnyj-robot/1607491892o6tRor67hR_1.jpg" class="card-img-top" alt="Коллаборативные роботы" >
+                        <img src="/images/10.jpg" class="card-img-top" alt="Коллаборативные роботы">
                         <p class="card-text">
-                            Коллаборативные роботы, или коботы, предназначены для работы вместе с людьми в общих рабочих пространствах. В отличие от традиционных промышленных роботов, которые работают изолированно, коботы оснащены средствами безопасности, которые позволяют им безопасно работать рядом с людьми.
-                            Этот тип роботов особенно полезен на производстве, где они помогают выполнять задачи, повышая производительность и безопасность людей[11].
-                            
-                            Робототехника продолжает стремительно развиваться, а технологические достижения приводят к появлению новых типов роботов и областей их применения. Каждый тип служит определенным целям и работает в конкретных областях, внося свой вклад в непрерывную трансформацию промышленности и общества.
+                            Коллаборативные роботы, или коботы, предназначены для работы вместе с людьми в общих рабочих пространствах. В отличие от традиционных промышленных роботов, которые работают изолированно, коботы оснащены средствами безопасности, которые позволяют им безопасно работать рядом с людьми. Этот тип роботов особенно полезен на производстве, где они помогают выполнять задачи, повышая производительность и безопасность людей.
                         </p>
                         <div class="fact-box">
                             <p class="fact-text">
-                                Интересный факт: Коботы могут работать с людьми без необходимости в защитных ограждениях, благодаря встроенным датчикам и системам безопасности.
+                                <em>Интересный факт:</em> Коботы могут работать с людьми без необходимости в защитных ограждениях, благодаря встроенным датчикам и системам безопасности.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>        
+        
+        <div id="section5"></div>
+        <div id="section6"></div>
+        <div id="section7"></div>
+        <div id="section8"></div>
+        <div id="section11"></div>
+        
+        </div>
         </section>
         
-<div id="section5"></div>
-<div id="section6"></div>
-<div id="section7"></div>
-<div id="section8"></div>
-<div id="section11"></div>
-
-
-            </div>
-        </section>
-
         <section id="ai-types" class="history-section" data-aos="fade-up">
             <div class="section-header">
-                <h2 class="section-title"><i class="fas fa-brain icon"></i>Виды искусственного интеллекта</h2>
+                <h2 class="section-title"><i class="fas fa-brain icon"></i> Виды искусственного интеллекта</h2>
                 <div class="decorative-line"></div>
             </div>
             <div class="intro-card">
@@ -667,7 +448,7 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
                         </p>
                         <div class="fact-box">
                             <p class="fact-text">
-                                Интересный факт: Чат-боты, основанные на узком ИИ, могут обрабатывать тысячи запросов одновременно, значительно повышая эффективность обслуживания клиентов.
+                                <em>Интересный факт:</em> Чат-боты, основанные на узком ИИ, могут обрабатывать тысячи запросов одновременно, значительно повышая эффективность обслуживания клиентов.
                             </p>
                         </div>
                     </div>
@@ -688,7 +469,7 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
                         </p>
                         <div class="fact-box">
                             <p class="fact-text">
-                                Интересный факт: Несмотря на отсутствие сильного ИИ, исследования в области AGI продолжаются, и многие ученые считают его достижение возможным в будущем.
+                                <em>Интересный факт:</em> Несмотря на отсутствие сильного ИИ, исследования в области AGI продолжаются, и многие ученые считают его достижение возможным в будущем.
                             </p>
                         </div>
                     </div>
@@ -712,7 +493,7 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
                         </ul>
                         <div class="fact-box">
                             <p class="fact-text">
-                                Интересный факт: Самосознающий ИИ, несмотря на свою спекулятивную природу, является популярной темой в научной фантастике и обсуждается в этических дебатах о будущем технологий.
+                                <em>Интересный факт:</em> Самосознающий ИИ, несмотря на свою спекулятивную природу, является популярной темой в научной фантастике и обсуждается в этических дебатах о будущем технологий.
                             </p>
                         </div>
                     </div>
@@ -733,7 +514,7 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
                         </p>
                         <div class="fact-box">
                             <p class="fact-text">
-                                Интересный факт: Суперинтеллект, как его представляют, может привести к непредсказуемым изменениям в обществе, что делает его изучение критически важным для будущего человечества.
+                                <em>Интересный факт:</em> Суперинтеллект, как его представляют, может привести к непредсказуемым изменениям в обществе, что делает его изучение критически важным для будущего человечества.
                             </p>
                         </div>
                     </div>
@@ -744,7 +525,7 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
         <div id="section9"></div>
         <section id="applications" class="history-section bg-light" data-aos="fade-up">
             <div class="section-header">
-                <h2 class="section-title"><i class="fas fa-cogs icon"></i>Применение робототехники и искусственного интеллекта</h2>
+                <h2 class="section-title"><i class="fas fa-cogs icon"></i> Применение робототехники и искусственного интеллекта</h2>
                 <div class="decorative-line"></div>
             </div>
             <div class="intro-card">
@@ -770,7 +551,7 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
                         </p>
                         <div class="fact-box">
                             <p class="fact-text">
-                                Интересный факт: Использование цифровых двойников в производстве позволяет сократить время на выявление и устранение неисправностей оборудования до 50%, значительно повышая общую производительность.
+                                <em>Интересный факт:</em> Использование цифровых двойников в производстве позволяет сократить время на выявление и устранение неисправностей оборудования до 50%, значительно повышая общую производительность.
                             </p>
                         </div>
                     </div>
@@ -791,7 +572,7 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
                         </p>
                         <div class="fact-box">
                             <p class="fact-text">
-                                Интересный факт: Роботы-хирурги, такие как Da Vinci, позволяют проводить минимально инвазивные операции с точностью, превышающей человеческие возможности, что снижает время восстановления пациентов.
+                                <em>Интересный факт:</em> Роботы-хирурги, такие как Da Vinci, позволяют проводить минимально инвазивные операции с точностью, превышающей человеческие возможности, что снижает время восстановления пациентов.
                             </p>
                         </div>
                     </div>
@@ -808,14 +589,14 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
                 <div class="card-content">
                     <div class="card-body">
                         <p class="card-text">
-                            Транспортный сектор становится свидетелем влияния ИИ благодаря разработке интеллектуальных алгоритмов, обеспечивающих автономное управление транспортными средствами. Эти алгоритмы интерпретируют данные с датчиков, таких как камеры и радары, облегчая принятие решений в реальном времени и навигацию в сложных условиях, тем самым повышая безопасность и снижая количество человеческих ошибок[11].
+                            Транспортный сектор становится свидетелем влияния ИИ благодаря разработке интеллектуальных алгоритмов, обеспечивающих автономное управление транспортными средствами. Эти алгоритмы интерпретируют данные с датчиков, таких как камеры и радары, облегчая принятие решений в реальном времени и навигацию в сложных условиях, тем самым повышая безопасность и снижая количество человеческих ошибок.[11]
                         </p>
                         <p class="card-text">
-                            Кроме того, робототехника на транспорте предполагает использование физических роботов, которые могут выполнять такие задачи, как доставка посылок и управление запасами на складах, значительно повышая эффективность работы и безопасность за счет выполнения задач в опасных условиях[11].
+                            Кроме того, робототехника на транспорте предполагает использование физических роботов, которые могут выполнять такие задачи, как доставка посылок и управление запасами на складах, значительно повышая эффективность работы и безопасность за счет выполнения задач в опасных условиях.[11]
                         </p>
                         <div class="fact-box">
                             <p class="fact-text">
-                                Интересный факт: Автономные транспортные средства используют более 200 датчиков и камер для обеспечения безопасного и эффективного передвижения в различных условиях.
+                                <em>Интересный факт:</em> Автономные транспортные средства используют более 200 датчиков и камер для обеспечения безопасного и эффективного передвижения в различных условиях.
                             </p>
                         </div>
                     </div>
@@ -832,11 +613,11 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
                 <div class="card-content">
                     <div class="card-body">
                         <p class="card-text">
-                            Индустрия развлечений также выигрывает от интеграции ИИ и робототехники, особенно в области создания контента и персонализированного пользовательского опыта. Сгенерированный ИИ контент позволяет разработчикам игр создавать захватывающий опыт в виртуальной и дополненной реальности, а рекомендательные системы повышают вовлеченность пользователей, подбирая персонализированный контент[16]. Робототехника может еще больше улучшить живые выступления и художественные инсталляции, обеспечивая интерактивный и увлекательный опыт для зрителей.
+                            Индустрия развлечений также выигрывает от интеграции ИИ и робототехники, особенно в области создания контента и персонализированного пользовательского опыта. Сгенерированный ИИ контент позволяет разработчикам игр создавать захватывающий опыт в виртуальной и дополненной реальности, а рекомендательные системы повышают вовлеченность пользователей, подбирая персонализированный контент.[16] Робототехника может еще больше улучшить живые выступления и художественные инсталляции, обеспечивая интерактивный и увлекательный опыт для зрителей.
                         </p>
                         <div class="fact-box">
                             <p class="fact-text">
-                                Интересный факт: Виртуальная реальность, усиленная ИИ, позволяет создавать уникальные и адаптивные игровые миры, которые реагируют на действия и предпочтения каждого игрока в реальном времени.
+                                <em>Интересный факт:</em> Виртуальная реальность, усиленная ИИ, позволяет создавать уникальные и адаптивные игровые миры, которые реагируют на действия и предпочтения каждого игрока в реальном времени.
                             </p>
                         </div>
                     </div>
@@ -853,11 +634,11 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
                 <div class="card-content">
                     <div class="card-body">
                         <p class="card-text">
-                            Технологии ИИ начали трансформировать юридическую сферу, оптимизируя такие процессы, как анализ документов и юридические исследования. Инструменты на базе ИИ могут эффективно анализировать большие объемы юридических текстов, выявляя ключевые вопросы и ускоряя процесс исследования, что позволяет специалистам в области права сосредоточиться на более стратегических задачах[16].
+                            Технологии ИИ начали трансформировать юридическую сферу, оптимизируя такие процессы, как анализ документов и юридические исследования. Инструменты на базе ИИ могут эффективно анализировать большие объемы юридических текстов, выявляя ключевые вопросы и ускоряя процесс исследования, что позволяет специалистам в области права сосредоточиться на более стратегических задачах.[16]
                         </p>
                         <div class="fact-box">
                             <p class="fact-text">
-                                Интересный факт: Использование ИИ в юридических исследованиях позволяет сократить время анализа документов с недель до нескольких часов, значительно повышая продуктивность юристов.
+                                <em>Интересный факт:</em> Использование ИИ в юридических исследованиях позволяет сократить время анализа документов с недель до нескольких часов, значительно повышая продуктивность юристов.
                             </p>
                         </div>
                     </div>
@@ -874,14 +655,14 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
                 <div class="card-content">
                     <div class="card-body">
                         <p class="card-text">
-                            В сфере безопасности решения на основе искусственного интеллекта используются для распознавания лиц, наблюдения и обнаружения угроз. Эти технологии значительно повышают уровень общественной безопасности, выявляя и смягчая потенциальные угрозы в режиме реального времени. Передовые системы биометрической аутентификации, использующие ИИ, обеспечивают более эффективные меры безопасности по сравнению с традиционными методами, повышая безопасность конфиденциальной информации и точек доступа[16].
+                            В сфере безопасности решения на основе искусственного интеллекта используются для распознавания лиц, наблюдения и обнаружения угроз. Эти технологии значительно повышают уровень общественной безопасности, выявляя и смягчая потенциальные угрозы в режиме реального времени. Передовые системы биометрической аутентификации, использующие ИИ, обеспечивают более эффективные меры безопасности по сравнению с традиционными методами, повышая безопасность конфиденциальной информации и точек доступа.[16]
                         </p>
                         <p class="card-text">
                             Слияние робототехники и искусственного интеллекта продолжает развиваться, стимулируя инновации и эффективность во многих отраслях, прокладывая путь в будущее, где умные машины будут играть неотъемлемую роль в повседневной жизни и промышленных операциях.
                         </p>
                         <div class="fact-box">
                             <p class="fact-text">
-                                Интересный факт: Современные системы видеонаблюдения с ИИ могут анализировать поведение людей в реальном времени, автоматически выявляя подозрительные действия и предупреждая службы безопасности.
+                                <em>Интересный факт:</em> Современные системы видеонаблюдения с ИИ могут анализировать поведение людей в реальном времени, автоматически выявляя подозрительные действия и предупреждая службы безопасности.
                             </p>
                         </div>
                     </div>
@@ -889,15 +670,16 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
             </div>
         </section>
         
+        
 
         <section id="ethics" class="history-section" data-aos="fade-up">
             <div class="section-header">
-                <h2 class="section-title"><i class="fas fa-balance-scale icon"></i>Этические соображения</h2>
+                <h2 class="section-title"><i class="fas fa-balance-scale icon"></i> Этические соображения</h2>
                 <div class="decorative-line"></div>
             </div>
             <div class="intro-card">
                 <p class="intro-text">
-                    Этическое внедрение робототехники и искусственного интеллекта (ИИ) требует внимательного подхода и соблюдения высоких стандартов ответственности. Рассмотрим ключевые аспекты, связанные с этическими вопросами в этой области.
+                    Этическое внедрение робототехники и искусственного интеллекта (<strong>ИИ</strong>) требует внимательного подхода и соблюдения высоких стандартов ответственности. Рассмотрим ключевые аспекты, связанные с этическими вопросами в этой области.
                 </p>
             </div>
         
@@ -911,11 +693,11 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
                 <div class="card-content">
                     <div class="card-body">
                         <p class="card-text">
-                            Этическое внедрение робототехники и искусственного интеллекта (ИИ) требует активного сотрудничества между производителями, разработчиками ИИ и отраслевыми экспертами для создания всеобъемлющих этических рекомендаций. Такие рекомендации способствуют общей ответственности и учитывают различные точки зрения, что крайне важно для развития этической практики ИИ[18].
+                            Этическое внедрение робототехники и искусственного интеллекта (<strong>ИИ</strong>) требует активного сотрудничества между производителями, разработчиками ИИ и отраслевыми экспертами для создания всеобъемлющих этических рекомендаций. Такие рекомендации способствуют общей ответственности и учитывают различные точки зрения, что крайне важно для развития этической практики ИИ.[18]
                         </p>
                         <div class="fact-box">
                             <p class="fact-text">
-                                Интересный факт: Международные организации, такие как IEEE и ISO, разрабатывают стандарты этики для ИИ, чтобы обеспечить согласованность и безопасность внедрения технологий.
+                                <em>Интересный факт:</em> Международные организации, такие как IEEE и ISO, разрабатывают стандарты этики для ИИ, чтобы обеспечить согласованность и безопасность внедрения технологий.
                             </p>
                         </div>
                     </div>
@@ -932,11 +714,11 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
                 <div class="card-content">
                     <div class="card-body">
                         <p class="card-text">
-                            Эффективная стратегия этической оценки ИИ предполагает создание междисциплинарных команд, в которые входят специалисты по этике, ученые, изучающие данные, и специалисты в данной области. Такой междисциплинарный подход позволяет проводить целостную оценку систем ИИ, рассматривая проблемы с разных сторон и усиливая этические соображения при их разработке и применении[18].
+                            Эффективная стратегия этической оценки ИИ предполагает создание междисциплинарных команд, в которые входят специалисты по этике, ученые, изучающие данные, и специалисты в данной области. Такой междисциплинарный подход позволяет проводить целостную оценку систем ИИ, рассматривая проблемы с разных сторон и усиливая этические соображения при их разработке и применении.[18]
                         </p>
                         <div class="fact-box">
                             <p class="fact-text">
-                                Интересный факт: Междисциплинарные команды способствуют более глубокому пониманию этических дилемм, возникающих при разработке ИИ, и помогают создавать более устойчивые и справедливые технологии.
+                                <em>Интересный факт:</em> Междисциплинарные команды способствуют более глубокому пониманию этических дилемм, возникающих при разработке ИИ, и помогают создавать более устойчивые и справедливые технологии.
                             </p>
                         </div>
                     </div>
@@ -954,21 +736,21 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
                     <div class="card-body">
                         <h4 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-gray-200">Этические аудиты</h4>
                         <p class="card-text">
-                            Регулярный этический аудит систем ИИ необходим для обеспечения справедливости, прозрачности и выявления предвзятости. Такие проверки помогают выявить недостатки и направить необходимые доработки для поддержания этических стандартов в технологиях ИИ[18].
+                            Регулярный этический аудит систем ИИ необходим для обеспечения справедливости, прозрачности и выявления предвзятости. Такие проверки помогают выявить недостатки и направить необходимые доработки для поддержания этических стандартов в технологиях ИИ.[18]
                         </p>
                         <div class="fact-box">
                             <p class="fact-text">
-                                Интересный факт: Этические аудиты помогают компаниям выявлять и устранять предвзятости в алгоритмах, что способствует созданию более справедливых и инклюзивных технологий.
+                                <em>Интересный факт:</em> Этические аудиты помогают компаниям выявлять и устранять предвзятости в алгоритмах, что способствует созданию справедливых и этичных технологий.
                             </p>
                         </div>
         
                         <h4 class="text-2xl font-semibold mt-6 mb-4 text-gray-800 dark:text-gray-200">Адаптивное обучение</h4>
                         <p class="card-text">
-                            Системы ИИ должны включать в себя механизмы непрерывного обучения на основе реальных результатов и отзывов пользователей. Такие процессы адаптивного обучения позволяют своевременно вносить корректировки, чтобы привести функциональные возможности ИИ в соответствие с развивающимися этическими и общественными нормами[18].
+                            Системы ИИ должны включать в себя механизмы непрерывного обучения на основе реальных результатов и отзывов пользователей. Такие процессы адаптивного обучения позволяют своевременно вносить корректировки, чтобы привести функциональные возможности ИИ в соответствие с развивающимися этическими и общественными нормами.[18]
                         </p>
                         <div class="fact-box">
                             <p class="fact-text">
-                                Интересный факт: Адаптивное обучение позволяет ИИ системам быстро реагировать на изменения в окружающей среде и требованиях пользователей, обеспечивая их актуальность и эффективность.
+                                <em>Интересный факт:</em> Адаптивное обучение позволяет ИИ системам быстро реагировать на изменения в окружающей среде и требованиях пользователей, обеспечивая их актуальность и эффективность.
                             </p>
                         </div>
                     </div>
@@ -985,11 +767,11 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
                 <div class="card-content">
                     <div class="card-body">
                         <p class="card-text">
-                            Повышение осведомленности об этических проблемах ИИ имеет жизненно важное значение. Ученые считают, что "искусственная этика" должна быть направлена на разработку машин, демонстрирующих этичное поведение, сопоставимое с человеческими моральными агентами. Это предполагает обеспечение того, чтобы машины обладали характеристиками, указывающими на этический статус, включая как этическую продуктивность, так и восприимчивость[19].
+                            Повышение осведомленности об этических проблемах ИИ имеет жизненно важное значение. Ученые считают, что "искусственная этика" должна быть направлена на разработку машин, демонстрирующих этичное поведение, сопоставимое с человеческими моральными агентами. Это предполагает обеспечение того, чтобы машины обладали характеристиками, указывающими на этический статус, включая как этическую продуктивность, так и восприимчивость.[19]
                         </p>
                         <div class="fact-box">
                             <p class="fact-text">
-                                Интересный факт: Образовательные программы по искусственной этике помогают будущим разработчикам ИИ учитывать моральные аспекты при создании новых технологий.
+                                <em>Интересный факт:</em> Образовательные программы по искусственной этике помогают будущим разработчикам ИИ учитывать моральные аспекты при создании новых технологий.
                             </p>
                         </div>
                     </div>
@@ -1006,11 +788,11 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
                 <div class="card-content">
                     <div class="card-body">
                         <p class="card-text">
-                            Пересечение ИИ и неприкосновенности частной жизни ставит серьезные этические проблемы. Цифровой ландшафт, характеризующийся обширным сбором данных и практикой наблюдения, вызывает озабоченность по поводу права собственности и контроля над персональными данными. Потенциальный ущерб от утечки данных, особенно в таких чувствительных областях, как здравоохранение, подчеркивает необходимость строгих гарантий и этических рамок, регулирующих использование данных[20][21].
+                            Пересечение ИИ и неприкосновенности частной жизни ставит серьезные этические проблемы. Цифровой ландшафт, характеризующийся обширным сбором данных и практикой наблюдения, вызывает озабоченность по поводу права собственности и контроля над персональными данными. Потенциальный ущерб от утечки данных, особенно в таких чувствительных областях, как здравоохранение, подчеркивает необходимость строгих гарантий и этических рамок, регулирующих использование данных.[20][21]
                         </p>
                         <div class="fact-box">
                             <p class="fact-text">
-                                Интересный факт: Введение законов о защите данных, таких как GDPR, стало важным шагом в обеспечении конфиденциальности и безопасности персональной информации в эпоху ИИ.
+                                <em>Интересный факт:</em> Введение законов о защите данных, таких как GDPR, стало важным шагом в обеспечении конфиденциальности и безопасности персональной информации в эпоху ИИ.
                             </p>
                         </div>
                     </div>
@@ -1027,11 +809,11 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
                 <div class="card-content">
                     <div class="card-body">
                         <p class="card-text">
-                            Появление технологий искусственного интеллекта связано со значительными экономическими сдвигами, в частности, с перемещением рабочих мест и неравенством. Автоматизация рутинной работы привела к "вытеснению" рынка труда, непропорционально затрагивая менее привилегированные группы населения[21][22]. Поскольку традиционные системы защиты, такие как страхование от безработицы, становятся менее эффективными в этом контексте, этические соображения, касающиеся экономического равенства и поддержки перемещенных работников, становятся все более актуальными[22].
+                            Появление технологий искусственного интеллекта (<strong>ИИ</strong>) связано со значительными экономическими сдвигами, в частности, с перемещением рабочих мест и неравенством. Автоматизация рутинной работы привела к "вытеснению" рынка труда, непропорционально затрагивая менее привилегированные группы населения.[21][22] Поскольку традиционные системы защиты, такие как страхование от безработицы, становятся менее эффективными в этом контексте, этические соображения, касающиеся экономического равенства и поддержки перемещенных работников, становятся все более актуальными.[22]
                         </p>
                         <div class="fact-box">
                             <p class="fact-text">
-                                Интересный факт: Внедрение ИИ в различные отрасли может привести к созданию новых рабочих мест, требующих навыков в области ИИ и технологий, что подчеркивает важность переобучения и образования для работников.
+                                <em>Интересный факт:</em> Внедрение ИИ в различные отрасли может привести к созданию новых рабочих мест, требующих навыков в области ИИ и технологий, что подчеркивает важность переобучения и образования для работников.
                             </p>
                         </div>
                     </div>
@@ -1039,16 +821,16 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
             </div>
         </section>
         
-
         <div id="section9"></div>
+        
         <section id="impact-on-society" class="history-section bg-light" data-aos="fade-up">
             <div class="section-header">
-                <h2 class="section-title"><i class="fas fa-users icon"></i>Воздействие на общество</h2>
+                <h2 class="section-title"><i class="fas fa-users icon"></i> Воздействие на общество</h2>
                 <div class="decorative-line"></div>
             </div>
             <div class="intro-card">
                 <p class="intro-text">
-                    Влияние искусственного интеллекта (ИИ) и робототехники на общество охватывает широкий спектр аспектов, включая экономические, социальные и этические изменения. Рассмотрим ключевые моменты этого воздействия.
+                    Влияние искусственного интеллекта (<strong>ИИ</strong>) и робототехники на общество охватывает широкий спектр аспектов, включая экономические, социальные и этические изменения. Рассмотрим ключевые моменты этого воздействия.
                 </p>
             </div>
         
@@ -1062,14 +844,14 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
                 <div class="card-content">
                     <div class="card-body">
                         <p class="card-text">
-                            Интеграция искусственного интеллекта (ИИ) и робототехники в экономику вызвала обеспокоенность ростом экономического неравенства и вытеснением рабочих мест. Однако факты свидетельствуют о том, что значительное увеличение экономического неравенства произошло еще до широкого распространения ИИ, начиная с 1980-х годов. В качестве факторов, способствующих этой тенденции, часто называются такие факторы, как глобализация, жесткая макроэкономическая политика, дерегулирование и технологические инновации[23].
+                            Интеграция искусственного интеллекта (<strong>ИИ</strong>) и робототехники в экономику вызвала обеспокоенность ростом экономического неравенства и вытеснением рабочих мест. Однако факты свидетельствуют о том, что значительное увеличение экономического неравенства произошло еще до широкого распространения ИИ, начиная с 1980-х годов. В качестве факторов, способствующих этой тенденции, часто называются такие факторы, как глобализация, жесткая макроэкономическая политика, дерегулирование и технологические инновации.[23]
                         </p>
                         <p class="card-text">
-                            Исторически сложилось так, что технологический прогресс приносит как пользу, так и вред рынку труда. Например, во времена Римской империи и промышленной революции высказывались опасения, что новые технологии могут подорвать гарантии занятости и уровень заработной платы[23]. В современную эпоху рынок труда демонстрирует удивительную устойчивость и способность адаптироваться к изменениям, вызванным технологическими переменами, что может говорить о том, что опасения, связанные с ИИ, несколько преждевременны[23].
+                            Исторически сложилось так, что технологический прогресс приносит как пользу, так и вред рынку труда. Например, во времена Римской империи и промышленной революции высказывались опасения, что новые технологии могут подорвать гарантии занятости и уровень заработной платы.[23] В современную эпоху рынок труда демонстрирует удивительную устойчивость и способность адаптироваться к изменениям, вызванным технологическими переменами, что может говорить о том, что опасения, связанные с ИИ, несколько преждевременны.[23]
                         </p>
                         <div class="fact-box">
                             <p class="fact-text">
-                                Интересный факт: Автоматизация и ИИ не только вытесняют рабочие места, но и создают новые профессии, требующие навыков в области технологий и управления ИИ.
+                                <em>Интересный факт:</em> Автоматизация и ИИ не только вытесняют рабочие места, но и создают новые профессии, требующие навыков в области технологий и управления ИИ.
                             </p>
                         </div>
                     </div>
@@ -1086,14 +868,14 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
                 <div class="card-content">
                     <div class="card-body">
                         <p class="card-text">
-                            По мере того как ИИ и автоматизация все больше проникают в различные отрасли, последствия для качества работы и безопасности работников становятся важнейшими темами для обсуждения. Автоматизация, как показывает практика, в непропорционально большой степени затрагивает профессии с низкой и средней квалификацией, что приводит к росту неравенства в оплате труда и сокращению занятости[24][25].
+                            По мере того как ИИ и автоматизация все больше проникают в различные отрасли, последствия для качества работы и безопасности работников становятся важнейшими темами для обсуждения. Автоматизация, как показывает практика, в непропорционально большой степени затрагивает профессии с низкой и средней квалификацией, что приводит к росту неравенства в оплате труда и сокращению занятости.[24][25]
                         </p>
                         <p class="card-text">
-                            Эти нарушения распределяются неравномерно и часто затрагивают уязвимые группы, такие как женщины, молодые работники и иммигранты, что вызывает серьезные опасения по поводу справедливости и равноправия на рынке труда[24]. Кроме того, страх перед технологическим перемещением рабочих мест может ослабить барьерную силу работников, что снижает вероятность того, что они будут выступать за улучшение условий труда или сообщать об опасностях[24].
+                            Эти нарушения распределяются неравномерно и часто затрагивают уязвимые группы, такие как женщины, молодые работники и иммигранты, что вызывает серьезные опасения по поводу справедливости и равноправия на рынке труда.[24] Кроме того, страх перед технологическим перемещением рабочих мест может ослабить барьерную силу работников, что снижает вероятность того, что они будут выступать за улучшение условий труда или сообщать об опасностях.[24]
                         </p>
                         <div class="fact-box">
                             <p class="fact-text">
-                                Интересный факт: Согласно исследованиям, автоматизация может повысить производительность труда на 20%, но также требует переобучения работников для адаптации к новым технологиям.
+                                <em>Интересный факт:</em> Согласно исследованиям, автоматизация может повысить производительность труда на 20%, но также требует переобучения работников для адаптации к новым технологиям.
                             </p>
                         </div>
                     </div>
@@ -1110,14 +892,14 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
                 <div class="card-content">
                     <div class="card-body">
                         <p class="card-text">
-                            Эффективное взаимодействие человека и робота (HRI) имеет решающее значение для успешной интеграции ИИ и робототехники в общество. Это взаимодействие включает в себя разработку удобных интерфейсов и коммуникационных протоколов, обеспечивающих беспрепятственное сотрудничество между людьми и машинами[26].
+                            Эффективное взаимодействие человека и робота (<strong>HRI</strong>) имеет решающее значение для успешной интеграции ИИ и робототехники в общество. Это взаимодействие включает в себя разработку удобных интерфейсов и коммуникационных протоколов, обеспечивающих беспрепятственное сотрудничество между людьми и машинами.[26]
                         </p>
                         <p class="card-text">
-                            Понимание эмоциональных и коммуникативных аспектов HRI имеет огромное значение для улучшения сотрудничества между людьми и роботами. Аффективные вычисления направлены на то, чтобы наделить роботов эмоциональным интеллектом, который может улучшить их способность естественно взаимодействовать с людьми и способствовать более эффективным отношениям[27][28].
+                            Понимание эмоциональных и коммуникативных аспектов <strong>HRI</strong> имеет огромное значение для улучшения сотрудничества между людьми и роботами. Аффективные вычисления направлены на то, чтобы наделить роботов эмоциональным интеллектом, который может улучшить их способность естественно взаимодействовать с людьми и способствовать более эффективным отношениям.[27][28]
                         </p>
                         <div class="fact-box">
                             <p class="fact-text">
-                                Интересный факт: Роботы, оснащенные аффективными вычислениями, могут распознавать и реагировать на эмоциональные состояния пользователей, повышая уровень доверия и комфорта при взаимодействии.
+                                <em>Интересный факт:</em> Роботы, оснащенные аффективными вычислениями, могут распознавать и реагировать на эмоциональные состояния пользователей, повышая уровень доверия и комфорта при взаимодействии.
                             </p>
                         </div>
                     </div>
@@ -1134,14 +916,14 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
                 <div class="card-content">
                     <div class="card-body">
                         <p class="card-text">
-                            Укрепление доверия общества к системам ИИ имеет первостепенное значение, особенно по мере того, как эти технологии становятся все более распространенными в процессах принятия решений. Прозрачность принятия решений с помощью ИИ имеет решающее значение для укрепления доверия и обеспечения того, чтобы люди понимали логику, лежащую в основе автоматизированных результатов[28].
+                            Укрепление доверия общества к системам ИИ имеет первостепенное значение, особенно по мере того, как эти технологии становятся все более распространенными в процессах принятия решений. Прозрачность принятия решений с помощью ИИ имеет решающее значение для укрепления доверия и обеспечения того, чтобы люди понимали логику, лежащую в основе автоматизированных результатов.[28]
                         </p>
                         <p class="card-text">
-                            Чтобы снизить риски, связанные с предвзятостью алгоритмов, и обеспечить этичность разработки ИИ, необходимо использовать разнообразные наборы обучающих данных и инклюзивные методы разработки. Взаимодействие с общественностью для решения проблем и обеспечения прозрачности жизненно важно для разработки систем, которые не только эффективно работают, но и соответствуют общественным ценностям и этическим нормам[28].
+                            Чтобы снизить риски, связанные с предвзятостью алгоритмов, и обеспечить этичность разработки ИИ, необходимо использовать разнообразные наборы обучающих данных и инклюзивные методы разработки. Взаимодействие с общественностью для решения проблем и обеспечения прозрачности жизненно важно для разработки систем, которые не только эффективно работают, но и соответствуют общественным ценностям и этическим нормам.[28]
                         </p>
                         <div class="fact-box">
                             <p class="fact-text">
-                                Интересный факт: Прозрачные алгоритмы ИИ помогают выявлять и устранять предвзятости, что способствует созданию справедливых и этичных технологий.
+                                <em>Интересный факт:</em> Прозрачные алгоритмы ИИ помогают выявлять и устранять предвзятости, что способствует созданию справедливых и этичных технологий.
                             </p>
                         </div>
                     </div>
@@ -1150,14 +932,125 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
         </section>
         
         <div id="section9"></div>
-        <section id="future-trends" class="history-section bg-light" data-aos="fade-up">
+        
+        <section id="impact-on-society" class="history-section bg-light" data-aos="fade-up">
             <div class="section-header">
-                <h2 class="section-title"><i class="fas fa-forward icon"></i>Тенденции будущего</h2>
+                <h2 class="section-title"><i class="fas fa-users icon"></i> Воздействие на общество</h2>
                 <div class="decorative-line"></div>
             </div>
             <div class="intro-card">
                 <p class="intro-text">
-                    Интеграция робототехники и искусственного интеллекта (ИИ) призвана переосмыслить различные отрасли промышленности и изменить будущее работы. По мере развития этих областей появление интеллектуальных роботов, способных выполнять сложные задачи, становится все более реальным. Эта эволюция будет включать в себя несколько ключевых тенденций.
+                    Влияние искусственного интеллекта (<strong>ИИ</strong>) и робототехники на общество охватывает широкий спектр аспектов, включая экономические, социальные и этические изменения. Рассмотрим ключевые моменты этого воздействия.
+                </p>
+            </div>
+        
+            <div class="history-card">
+                <div class="card-header" onclick="toggleSection(this)">
+                    <h3 class="text-3xl font-bold mb-6 text-gray-900 dark:text-white">Экономическое неравенство и разрушение рынка труда</h3>
+                    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Интеграция искусственного интеллекта (<strong>ИИ</strong>) и робототехники в экономику вызвала обеспокоенность ростом экономического неравенства и вытеснением рабочих мест. Однако факты свидетельствуют о том, что значительное увеличение экономического неравенства произошло еще до широкого распространения ИИ, начиная с 1980-х годов. В качестве факторов, способствующих этой тенденции, часто называются такие факторы, как глобализация, жесткая макроэкономическая политика, дерегулирование и технологические инновации.[23]
+                        </p>
+                        <p class="card-text">
+                            Исторически сложилось так, что технологический прогресс приносит как пользу, так и вред рынку труда. Например, во времена Римской империи и промышленной революции высказывались опасения, что новые технологии могут подорвать гарантии занятости и уровень заработной платы.[23] В современную эпоху рынок труда демонстрирует удивительную устойчивость и способность адаптироваться к изменениям, вызванным технологическими переменами, что может говорить о том, что опасения, связанные с ИИ, несколько преждевременны.[23]
+                        </p>
+                        <div class="fact-box">
+                            <p class="fact-text">
+                                <em>Интересный факт:</em> Автоматизация и ИИ не только вытесняют рабочие места, но и создают новые профессии, требующие навыков в области технологий и управления ИИ.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="history-card">
+                <div class="card-header" onclick="toggleSection(this)">
+                    <h3 class="text-3xl font-bold mb-6 text-gray-900 dark:text-white">Качество рабочих мест и тенденции перемещения</h3>
+                    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <p class="card-text">
+                            По мере того как ИИ и автоматизация все больше проникают в различные отрасли, последствия для качества работы и безопасности работников становятся важнейшими темами для обсуждения. Автоматизация, как показывает практика, в непропорционально большой степени затрагивает профессии с низкой и средней квалификацией, что приводит к росту неравенства в оплате труда и сокращению занятости.[24][25]
+                        </p>
+                        <p class="card-text">
+                            Эти нарушения распределяются неравномерно и часто затрагивают уязвимые группы, такие как женщины, молодые работники и иммигранты, что вызывает серьезные опасения по поводу справедливости и равноправия на рынке труда.[24] Кроме того, страх перед технологическим перемещением рабочих мест может ослабить барьерную силу работников, что снижает вероятность того, что они будут выступать за улучшение условий труда или сообщать об опасностях.[24]
+                        </p>
+                        <div class="fact-box">
+                            <p class="fact-text">
+                                <em>Интересный факт:</em> Согласно исследованиям, автоматизация может повысить производительность труда на 20%, но также требует переобучения работников для адаптации к новым технологиям.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="history-card">
+                <div class="card-header" onclick="toggleSection(this)">
+                    <h3 class="text-3xl font-bold mb-6 text-gray-900 dark:text-white">Взаимодействие и коммуникация между человеком и роботом</h3>
+                    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Эффективное взаимодействие человека и робота (<strong>HRI</strong>) имеет решающее значение для успешной интеграции ИИ и робототехники в общество. Это взаимодействие включает в себя разработку удобных интерфейсов и коммуникационных протоколов, обеспечивающих беспрепятственное сотрудничество между людьми и машинами.[26]
+                        </p>
+                        <p class="card-text">
+                            Понимание эмоциональных и коммуникативных аспектов <strong>HRI</strong> имеет огромное значение для улучшения сотрудничества между людьми и роботами. Аффективные вычисления направлены на то, чтобы наделить роботов эмоциональным интеллектом, который может улучшить их способность естественно взаимодействовать с людьми и способствовать более эффективным отношениям.[27][28]
+                        </p>
+                        <div class="fact-box">
+                            <p class="fact-text">
+                                <em>Интересный факт:</em> Роботы, оснащенные аффективными вычислениями, могут распознавать и реагировать на эмоциональные состояния пользователей, повышая уровень доверия и комфорта при взаимодействии.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="history-card">
+                <div class="card-header" onclick="toggleSection(this)">
+                    <h3 class="text-3xl font-bold mb-6 text-gray-900 dark:text-white">Доверие, подотчетность и этические аспекты</h3>
+                    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Укрепление доверия общества к системам ИИ имеет первостепенное значение, особенно по мере того, как эти технологии становятся все более распространенными в процессах принятия решений. Прозрачность принятия решений с помощью ИИ имеет решающее значение для укрепления доверия и обеспечения того, чтобы люди понимали логику, лежащую в основе автоматизированных результатов.[28]
+                        </p>
+                        <p class="card-text">
+                            Чтобы снизить риски, связанные с предвзятостью алгоритмов, и обеспечить этичность разработки ИИ, необходимо использовать разнообразные наборы обучающих данных и инклюзивные методы разработки. Взаимодействие с общественностью для решения проблем и обеспечения прозрачности жизненно важно для разработки систем, которые не только эффективно работают, но и соответствуют общественным ценностям и этическим нормам.[28]
+                        </p>
+                        <div class="fact-box">
+                            <p class="fact-text">
+                                <em>Интересный факт:</em> Прозрачные алгоритмы ИИ помогают выявлять и устранять предвзятости, что способствует созданию справедливых и этичных технологий.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <div id="section9"></div>
+        <section id="future-trends" class="history-section bg-light" data-aos="fade-up">
+            <div class="section-header">
+                <h2 class="section-title"><i class="fas fa-forward icon"></i> Тенденции будущего</h2>
+                <div class="decorative-line"></div>
+            </div>
+            <div class="intro-card">
+                <p class="intro-text">
+                    Интеграция робототехники и искусственного интеллекта (<strong>ИИ</strong>) призвана переосмыслить различные отрасли промышленности и изменить будущее работы. По мере развития этих областей появление интеллектуальных роботов, способных выполнять сложные задачи, становится все более реальным. Эта эволюция будет включать в себя несколько ключевых тенденций.
                 </p>
             </div>
         
@@ -1171,11 +1064,11 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
                 <div class="card-content">
                     <div class="card-body">
                         <p class="card-text">
-                            Ожидается, что робототехника будет значительно развиваться, используя искусственный интеллект для расширения своих возможностей. Ожидается, что роботы будущего будут обладать развитыми когнитивными способностями, позволяющими им учиться у окружающей среды и адаптироваться к меняющимся условиям. Эти роботы могут быть оснащены технологиями обработки естественного языка, что позволит им более интуитивно взаимодействовать с людьми, преодолевая тем самым коммуникационный разрыв между машинами и людьми[11][29].
+                            Ожидается, что робототехника будет значительно развиваться, используя искусственный интеллект для расширения своих возможностей. Ожидается, что роботы будущего будут обладать развитыми когнитивными способностями, позволяющими им учиться у окружающей среды и адаптироваться к меняющимся условиям. Эти роботы могут быть оснащены технологиями обработки естественного языка, что позволит им более интуитивно взаимодействовать с людьми, преодолевая тем самым коммуникационный разрыв между машинами и людьми.[11][29]
                         </p>
                         <div class="fact-box">
                             <p class="fact-text">
-                                Интересный факт: Современные роботы, оснащенные ИИ, могут учиться выполнять новые задачи всего за несколько демонстраций, значительно сокращая время на их обучение.
+                                <em>Интересный факт:</em> Современные роботы, оснащенные ИИ, могут учиться выполнять новые задачи всего за несколько демонстраций, значительно сокращая время на их обучение.
                             </p>
                         </div>
                     </div>
@@ -1192,11 +1085,11 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
                 <div class="card-content">
                     <div class="card-body">
                         <p class="card-text">
-                            Спрос на автоматизацию в таких отраслях, как производство, здравоохранение и транспортные перевозки, постоянно растет. Роботы, оснащенные сложными датчиками, будут способствовать бесперебойной автоматизации, собирая и анализируя данные в режиме реального времени. Например, в обрабатывающей промышленности датчики могут обеспечить контроль качества и повысить эффективность работы[30][31]. По мере интеграции этих технологий возможности роботов по выполнению задач, которые традиционно требовали от человека ловкости рук и принятия решений, будут значительно расширяться.
+                            Спрос на автоматизацию в таких отраслях, как производство, здравоохранение и транспортные перевозки, постоянно растет. Роботы, оснащенные сложными датчиками, будут способствовать бесперебойной автоматизации, собирая и анализируя данные в режиме реального времени. Например, в обрабатывающей промышленности датчики могут обеспечить контроль качества и повысить эффективность работы.[30][31] По мере интеграции этих технологий возможности роботов по выполнению задач, которые традиционно требовали от человека ловкости рук и принятия решений, будут значительно расширяться.
                         </p>
                         <div class="fact-box">
                             <p class="fact-text">
-                                Интересный факт: Внедрение автоматизированных систем в производство может увеличить производительность на 30%, одновременно снижая затраты на труд.
+                                <em>Интересный факт:</em> Внедрение автоматизированных систем в производство может увеличить производительность на 30%, одновременно снижая затраты на труд.
                             </p>
                         </div>
                     </div>
@@ -1213,11 +1106,11 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
                 <div class="card-content">
                     <div class="card-body">
                         <p class="card-text">
-                            Роль сенсоров в робототехнике будет продолжать развиваться, обеспечивая машины необходимой информацией для эффективного взаимодействия с окружающей средой. Такие датчики, как LIDAR (Light Detection and Ranging), станут более распространенными, особенно в автономных транспортных средствах для навигации и обнаружения препятствий. Интеграция передовых сенсорных технологий позволит роботам выполнять задачи, требующие точности и адаптивности, например, корректировать покрытия в режиме реального времени во время производственных процессов[32][33].
+                            Роль сенсоров в робототехнике будет продолжать развиваться, обеспечивая машины необходимой информацией для эффективного взаимодействия с окружающей средой. Такие датчики, как <strong>LIDAR</strong> (<strong>Light Detection and Ranging</strong>), станут более распространенными, особенно в автономных транспортных средствах для навигации и обнаружения препятствий. Интеграция передовых сенсорных технологий позволит роботам выполнять задачи, требующие точности и адаптивности, например, корректировать покрытия в режиме реального времени во время производственных процессов.[32][33]
                         </p>
                         <div class="fact-box">
                             <p class="fact-text">
-                                Интересный факт: Технология LIDAR используется не только в автомобилях, но и в сельском хозяйстве для точного мониторинга посевов и состояния почвы.
+                                <em>Интересный факт:</em> Технология LIDAR используется не только в автомобилях, но и в сельском хозяйстве для точного мониторинга посевов и состояния почвы.
                             </p>
                         </div>
                     </div>
@@ -1234,11 +1127,11 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
                 <div class="card-content">
                     <div class="card-body">
                         <p class="card-text">
-                            Ожидается, что рынок ИИ в робототехнике будет расти по экспоненте. В 2021 году рынок оценивался примерно в 6,9 млрд долларов США, а к 2026 году, по прогнозам, достигнет 35,5 млрд долларов США при совокупном годовом темпе роста (CAGR) 38,6 %[34]. Этот рост будет обусловлен все более широким внедрением технологий ИИ в различные робототехнические приложения, включая здравоохранение, сельское хозяйство, системы "умного дома" и аэрокосмическую отрасль.
+                            Ожидается, что рынок ИИ в робототехнике будет расти по экспоненте. В 2021 году рынок оценивался примерно в 6,9 млрд долларов США, а к 2026 году, по прогнозам, достигнет 35,5 млрд долларов США при совокупном годовом темпе роста (<strong>CAGR</strong>) 38,6%.[34] Этот рост будет обусловлен все более широким внедрением технологий ИИ в различные робототехнические приложения, включая здравоохранение, сельское хозяйство, системы "умного дома" и аэрокосмическую отрасль.
                         </p>
                         <div class="fact-box">
                             <p class="fact-text">
-                                Интересный факт: Ожидается, что к 2030 году более 50% всех роботов будут интегрированы с ИИ, что позволит им выполнять более сложные и автономные задачи.
+                                <em>Интересный факт:</em> Ожидается, что к 2030 году более 50% всех роботов будут интегрированы с ИИ, что позволит им выполнять более сложные и автономные задачи.
                             </p>
                         </div>
                     </div>
@@ -1255,17 +1148,18 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
                 <div class="card-content">
                     <div class="card-body">
                         <p class="card-text">
-                            Несмотря на многообещающее будущее робототехники и искусственного интеллекта, проблемы остаются. Риски безопасности данных представляют собой серьезную угрозу по мере того, как роботы становятся взаимосвязанными через Интернет вещей. Кроме того, необходимо учитывать затраты, связанные с обслуживанием роботов, и экологические последствия производственных процессов[35]. По мере развития технологий сбалансированный подход, учитывающий как потенциал, так и подводные камни, будет иметь решающее значение для устойчивой интеграции робототехники и ИИ в общество.
+                            Несмотря на многообещающее будущее робототехники и искусственного интеллекта (<strong>ИИ</strong>), проблемы остаются. Риски безопасности данных представляют собой серьезную угрозу по мере того, как роботы становятся взаимосвязанными через Интернет вещей. Кроме того, необходимо учитывать затраты, связанные с обслуживанием роботов, и экологические последствия производственных процессов.[35] По мере развития технологий сбалансированный подход, учитывающий как потенциал, так и подводные камни, будет иметь решающее значение для устойчивой интеграции робототехники и ИИ в общество.
                         </p>
                         <div class="fact-box">
                             <p class="fact-text">
-                                Интересный факт: Эко-дизайн роботов позволяет снижать их углеродный след, используя перерабатываемые материалы и энергоэффективные технологии.
+                                <em>Интересный факт:</em> Эко-дизайн роботов позволяет снижать их углеродный след, используя перерабатываемые материалы и энергоэффективные технологии.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        
         
 
         <section id="references" class="history-section bg-light" data-aos="fade-up">
@@ -1335,504 +1229,56 @@ document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
 
     <script src="script.js"></script>
     
-    <script>
+<script>    const references = {
+    1: "https://pioneerindsys.com/the-history-of-robotics-and-automation-a-comprehensive-timeline/",
+    2: "https://www.intellspot.com/what-is-robotics/",
+    3: "https://keybotic.com/history-of-robotics-a-comprehensive-history-of-evolution-and-innovation/",
+    4: "https://www.pcworld.com/article/469885/historys_10_most_influential_robots.html",
+    5: "https://techietory.com/robotics/the-history-of-robotics-from-ancient-times-to-modern-innovations/",
+    6: "https://www.uti.edu/blog/robotics-and-automation/robotics-basics",
+    7: "https://en.wikipedia.org/wiki/History_of_robots",
+    8: "https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-ai",
+    9: "https://iabac.org/blog/differences-between-robotics-and-artificial-intelligence",
+    10: "https://www.techtarget.com/whatis/definition/robotics",
+    11: "https://aiforsocialgood.ca/blog/artificial-intelligence-and-robotics-a-battle-for-technological-supremacy",
+    12: "https://www.coursera.org/articles/what-is-artificial-intelligence",
+    13: "https://builtin.com/artificial-intelligence",
+    14: "https://en.wikipedia.org/wiki/Artificial_intelligence",
+    15: "https://www.mckinsey.com/capabilities/operations/our-insights/human-plus-machine-a-new-era-of-automation-in-manufacturing",
+    16: "https://www.forbes.com/sites/bernardmarr/2023/05/10/15-amazing-real-world-applications-of-ai-everyone-should-know-about/",
+    17: "https://allyrobotics.com/artificial-intelligence-vs-robotics/",
+    18: "https://copperdigital.com/blog/ethical-implications-ai-decision-making-manufacturing/",
+    19: "https://plato.stanford.edu/entries/ethics-ai/",
+    20: "https://journalofethics.ama-assn.org/article/how-should-surgeons-consider-emerging-innovations-artificial-intelligence-and-robotics/2023-08",
+    21: "https://www.brookings.edu/articles/countering-the-geographical-impacts-of-automation-computers-ai-and-place-disparities/",
+    22: "https://www.chicagofed.org/publications/blogs/chicago-fed-insights/2023/the-automation-of-jobs",
+    23: "https://ai100.stanford.edu/gathering-strength-gathering-storms-one-hundred-year-study-artificial-intelligence-ai100-2021-1-1",
+    24: "https://blogs.cdc.gov/niosh-science-blog/2022/02/15/tjd-fow/",
+    25: "https://tcf.org/content/report/robots-beginning-affect-workers-wages/",
+    26: "https://toolingideas.com/what-are-the-key-components-and-features-of-a-robot/",
+    27: "https://www.frontiersin.org/journals/neurorobotics/articles/10.3389/fnbot.2023.1084000/full",
+    28: "https://www.frontiersin.org/journals/neurorobotics/articles/10.3389/fnbot.2023.1084000/full",
+    29: "https://techietory.com/robotics/understanding-robot-anatomy-essential-components-explained/",
+    30: "https://www.vaia.com/en-us/explanations/engineering/robotics-engineering/robot-sensors/",
+    31: "https://roboticsbiz.com/sensors-in-robotics-7-common-sensors-used-in-robots/",
+    32: "https://www.mckinsey.com/capabilities/operations/our-insights/automation-robotics-and-the-factory-of-the-future",
+    33: "https://www.vaia.com/en-us/explanations/engineering/mechanical-engineering/robotic-sensors/",
+    34: "https://www.v7labs.com/blog/ai-in-robotics",
+    35: "https://builtin.com/robotics"
+};
 
-  
-    function addQuizQuestion(containerId, questionData) {
-        const container = document.getElementById(containerId);
+function convertReferencesToLinksInBody() {
+document.body.innerHTML = document.body.innerHTML.replace(/\[(\d+)\]/g, (match, number) => {
+const url = references[number];
+if (url) {
+    return `<a href="${url}" target="_blank">${match}</a>`;
+}
+return match;
+});
+}
 
-
-        const section = document.createElement('div');
-        section.classList.add('quiz-section');
-
-      
-        const question = document.createElement('div');
-        question.classList.add('quiz-question');
-        question.textContent = questionData.question;
-        section.appendChild(question);
-
-  
-        const optionsContainer = document.createElement('div');
-        optionsContainer.classList.add('quiz-options');
-
-        questionData.options.forEach(option => {
-            const optionElement = document.createElement('div');
-            optionElement.classList.add('quiz-option');
-            optionElement.textContent = option;
-
-
-            optionElement.addEventListener('click', () => checkAnswer(optionElement, option, questionData.correct));
-            optionsContainer.appendChild(optionElement);
-        });
-
-        section.appendChild(optionsContainer);
-        container.appendChild(section);
-    }
-
-
-    function checkAnswer(element, selected, correct) {
-        const options = element.parentElement.querySelectorAll('.quiz-option');
-        options.forEach(opt => {
-            opt.classList.remove('correct', 'wrong');
-        });
-
-        if (selected === correct) {
-            element.classList.add('correct');
-            setTimeout(() => {
-                alert("Правильно!");
-            }, 500);
-        } else {
-            element.classList.add('wrong');
-            const correctOption = Array.from(options).find(opt => opt.textContent === String(correct));
-            correctOption.classList.add('correct');
-        }
-    }
-
-
-    const question1 = {
-        question: "В каком году был создан первый программируемый робот?",
-        options: [1954, 1961, 1969, 1975],
-        correct: 1961
-    };
-
-    const question2 = {
-        question: "Кто изобрел первого промышленного робота?",
-        options: ["Джордж Девол", "Никола Тесла", "Илон Маск", "Леонардо да Винчи"],
-        correct: "Джордж Девол"
-    };
-
-    const question3 = {
-        question: "Какой робот стал первым коммерчески успешным?",
-        options: ["Unimate", "Roomba", "Sophia", "ASIMO"],
-        correct: "Unimate"
-    };
-    const question4 = {
-        question: "Какой из следующих роботов был первым автономным мобильным роботом?",
-        options: ["Roomba", "Unimate", "Shakey", "Pepper"],
-        correct: "Shakey"
-    };
-
-    const question5 = {
-        question: "Какой компонент отвечает за обработку информации в роботах?",
-        options: ["Сенсоры", "Процессор", "Приводы", "Механизм"],
-        correct: "Процессор"
-    };
-
-    const question6 = {
-        question: "Какой тип робота часто используется в автомобильной промышленности?",
-        options: ["Гуманоидный", "Коллаборативный", "Промышленный", "Сервисный"],
-        correct: "Промышленный"
-    };
-
-    const question7 = {
-        question: "Какая страна выпустила первого робота-гуманоида, способного ходить и взаимодействовать?",
-        options: ["США", "Япония", "Германия", "Китай"],
-        correct: "Япония"
-    };
-
-    const question8 = {
-        question: "Какой датчик используется для обнаружения препятствий в автономных автомобилях?",
-        options: ["Камера", "LIDAR", "Сонар", "Гироскоп"],
-        correct: "LIDAR"
-    };
-
-    const question9 = {
-        question: "Какой из этих терминов описывает способность ИИ учиться на опыте?",
-        options: ["Обучение с учителем", "Машинное обучение", "Обучение без учителя", "Глубокое обучение"],
-        correct: "Машинное обучение"
-    };
-
-    const question10 = {
-        question: "Кто ввёл термин 'робот' в современном понимании",
-        options: ["Леонардо да Винчи", "Джордж Девол", "Алан Тьюринг", "Карел Чапек"],
-        correct: "Карел Чапек"
-    };
-
-    const question11 = {
-        question: "Какая технология лежит в основе роботов-пылесосов?",
-        options: ["Ультразвук", "Вакуумная очистка", "Обнаружение препятствий", "Все вышеперечисленное"],
-        correct: "Все вышеперечисленное"
-    };
-
-    const question12 = {
-        question: "Какая компания создала первого успешного робота для сборочной линии?",
-        options: ["Tesla", "General Motors", "Honda", "Ford"],
-        correct: "General Motors"
-    };
- 
-    addQuizQuestion("section1", question1);
-    addQuizQuestion("section2", question2);
-    addQuizQuestion("section3", question3);
- 
-    addQuizQuestion("section4", question4);
-    addQuizQuestion("section5", question5);
-    addQuizQuestion("section6", question6);
-
-    addQuizQuestion("section7", question7);
-    addQuizQuestion("section8", question8);
-    addQuizQuestion("section9", question9);
-
-    addQuizQuestion("section10", question10);
-    addQuizQuestion("section11", question11);
-    addQuizQuestion("section12", question12);
-
-
-
+document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
 </script>
 
-<style>
-   
-    .quiz-section {
-        background: white;
-        padding: 2rem;
-        border-radius: 1rem;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        margin: 2rem 0;
-    }
-
-    .quiz-question {
-        font-size: 1.2rem;
-        font-weight: 500;
-        margin-bottom: 1.5rem;
-        text-align: center;
-    }
-
-    .quiz-options {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 1rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .quiz-option {
-        padding: 1rem;
-        border: 2px solid #e5e7eb;
-        border-radius: 0.5rem;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        text-align: center;
-    }
-
-    .quiz-option:hover {
-        border-color: #2563eb;
-        transform: translateY(-2px);
-    }
-
-    .quiz-option.correct {
-        background: #dcfce7;
-        border-color: #22c55e;
-    }
-
-    .quiz-option.wrong {
-        background: #fee2e2;
-        border-color: #ef4444;
-    }
- 
-        :root {
-            --primary-gradient: linear-gradient(135deg, #2563eb, #9333ea);
-            --secondary-gradient: linear-gradient(135deg, #eff6ff, #f5f3ff);
-            --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            --card-hover-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
-        }
-
-     
-        body {
-            background-color: #f8fafc;
-            margin: 0;
-            font-family: 'Inter', sans-serif;
-            color: #1f2937;
-        }
-
-   
-        .history-section {
-            max-width: 1024px;
-            margin: 0 auto;
-            padding: 2rem;
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeInUp 0.8s ease forwards;
-        }
-
-        @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-  
-        .section-header {
-            text-align: center;
-            margin-bottom: 3rem;
-            position: relative;
-        }
-
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-            background: var(--primary-gradient);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            position: relative;
-            display: inline-block;
-        }
-
-        
-        .section-title::before {
-            content: '';
-            position: absolute;
-            top: -20%;
-            left: -10%;
-            width: 120%;
-            height: 140%;
-            background: radial-gradient(circle, rgba(37, 99, 235, 0.1) 0%, transparent 70%);
-            animation: pulse 3s infinite;
-            z-index: -1;
-        }
-
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-
-  
-        .decorative-line {
-            width: 6rem;
-            height: 4px;
-            margin: 0 auto;
-            background: var(--primary-gradient);
-            border-radius: 2px;
-            position: relative;
-        }
-
-     
-        .decorative-line::after {
-            content: '';
-            position: absolute;
-            top: -2px;
-            left: -2px;
-            right: -2px;
-            bottom: -2px;
-            background: var(--primary-gradient);
-            filter: blur(8px);
-            opacity: 0.3;
-        }
-
-
-        .intro-card {
-            padding: 2rem;
-            border-radius: 1rem;
-            background: var(--secondary-gradient);
-            border: 1px solid rgba(37, 99, 235, 0.1);
-            box-shadow: var(--card-shadow);
-            margin-bottom: 2rem;
-            position: relative;
-            overflow: hidden;
-        }
-
-
-        .intro-card::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(45deg, transparent 40%, rgba(37, 99, 235, 0.1) 50%, transparent 60%);
-            animation: shimmer 3s infinite linear;
-            pointer-events: none;
-        }
-
-        @keyframes shimmer {
-            from { transform: translateX(-100%) rotate(45deg); }
-            to { transform: translateX(100%) rotate(45deg); }
-        }
-
-        .intro-text {
-            font-size: 1.125rem;
-            line-height: 1.7;
-            color: #374151;
-            position: relative;
-        }
-
-
-        .history-card {
-            background: white;
-            border-radius: 1rem;
-            overflow: hidden;
-            box-shadow: var(--card-shadow);
-            transition: all 0.3s ease;
-            margin-bottom: 1.5rem;
-            border: 1px solid rgba(37, 99, 235, 0.1);
-            position: relative;
-        }
-
-        .history-card:hover {
-            box-shadow: var(--card-hover-shadow);
-            transform: translateY(-2px);
-        }
-
-      
-        .card-header {
-            padding: 1.5rem;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: white;
-            transition: background 0.3s ease;
-            position: relative;
-        }
-
-        .card-title {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #1f2937;
-            margin: 0;
-            transition: color 0.3s ease;
-        }
-
-   
-        .card-content {
-            max-height: 0;
-            opacity: 0;
-            padding: 0 1.5rem;
-            overflow: hidden;
-            transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
-            background: linear-gradient(135deg, white, #f8fafc);
-        }
-
-        .card-content.active {
-            max-height: 1000px;
-            opacity: 1;
-            padding: 1.5rem;
-        }
-
-
-
-        .card-text {
-            color: #4b5563;
-            line-height: 1.7;
-            margin-bottom: 1rem;
-        }
-
-       
-        .fact-box {
-            background: rgba(37, 99, 235, 0.05);
-            padding: 1.2rem;
-            border-radius: 0.8rem;
-            margin-top: 1.5rem;
-            transform: translateY(10px);
-            opacity: 0;
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            transition-delay: 0.1s;
-            border-left: 4px solid #2563eb;
-            position: relative;
-        }
-
-        .fact-box::before {
-            content: '💡';
-            position: absolute;
-            top: -12px;
-            left: -12px;
-            background: white;
-            padding: 4px;
-            border-radius: 50%;
-            box-shadow: var(--card-shadow);
-        }
-
-        .card-content.active .fact-box {
-            transform: translateY(0);
-            opacity: 1;
-        }
-
-        .fact-text {
-            color: #1e40af;
-            font-size: 0.95rem;
-            margin: 0;
-            line-height: 1.6;
-        }
-
-       
-        .chevron {
-            width: 24px;
-            height: 24px;
-            transition: transform 0.3s ease;
-            stroke: #2563eb;
-            stroke-width: 2.5;
-        }
-
-        .chevron.active {
-            transform: rotate(180deg);
-        }
-
-      
-        .history-card::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            height: 3px;
-            background: var(--primary-gradient);
-            transform: scaleX(0);
-            transition: transform 0.3s ease;
-        }
-
-        .history-card:hover::after {
-            transform: scaleX(1);
-        }
-
-</style>
-
-    <script>
-
-
-
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
-
-
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('sticky');
-            } else {
-                navbar.classList.remove('sticky');
-            }
-
-            const backToTop = document.getElementById('backToTop');
-            if (window.scrollY > 300) {
-                backToTop.style.display = 'block';
-            } else {
-                backToTop.style.display = 'none';
-            }
-        });
-
-        document.querySelectorAll('a.nav-link').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        document.getElementById('backToTop').addEventListener('click', function() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-
-
-
-        
-    </script>
 </body>
 </html>
