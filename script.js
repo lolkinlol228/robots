@@ -1,55 +1,37 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 AOS.init({
     duration: 1000,
     once: true
 });
 
-
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 50) {
-        navbar.classList.add('sticky');
-    } else {
-        navbar.classList.remove('sticky');
+    if (navbar) {
+        if (window.scrollY > 50) {
+            navbar.classList.add('sticky');
+        } else {
+            navbar.classList.remove('sticky');
+        }
     }
 
     const backToTop = document.getElementById('backToTop');
-    if (window.scrollY > 300) {
-        backToTop.style.display = 'block';
-    } else {
-        backToTop.style.display = 'none';
+    if (backToTop) {
+        if (window.scrollY > 300) {
+            backToTop.style.display = 'block';
+        } else {
+            backToTop.style.display = 'none';
+        }
     }
 });
 
 document.querySelectorAll('a.nav-link').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
     });
 });
 
@@ -60,21 +42,19 @@ document.getElementById('backToTop').addEventListener('click', function() {
     });
 });
 
-
-
 function addQuizQuestion(containerId, questionData) {
     const container = document.getElementById(containerId);
-
+    if (!container) {
+        return;
+    }
 
     const section = document.createElement('div');
     section.classList.add('quiz-section');
 
-  
     const question = document.createElement('div');
     question.classList.add('quiz-question');
     question.textContent = questionData.question;
     section.appendChild(question);
-
 
     const optionsContainer = document.createElement('div');
     optionsContainer.classList.add('quiz-options');
@@ -84,7 +64,6 @@ function addQuizQuestion(containerId, questionData) {
         optionElement.classList.add('quiz-option');
         optionElement.textContent = option;
 
-
         optionElement.addEventListener('click', () => checkAnswer(optionElement, option, questionData.correct));
         optionsContainer.appendChild(optionElement);
     });
@@ -93,25 +72,42 @@ function addQuizQuestion(containerId, questionData) {
     container.appendChild(section);
 }
 
+window.addEventListener('load', function() {
+    document.body.classList.add('loaded');
+
+    addQuizQuestion("section1", question1);
+    addQuizQuestion("section2", question2);
+    addQuizQuestion("section3", question3);
+
+    addQuizQuestion("section4", question4);
+    addQuizQuestion("section5", question5);
+    addQuizQuestion("section6", question6); 
+
+    addQuizQuestion("section7", question7);
+    addQuizQuestion("section8", question8);
+    addQuizQuestion("section9", question9);
+
+    addQuizQuestion("section10", question10);
+    addQuizQuestion("section11", question11);
+    addQuizQuestion("section12", question12);
+});
 
 function checkAnswer(element, selected, correct) {
     const options = element.parentElement.querySelectorAll('.quiz-option');
-    options.forEach(opt => {
-        opt.classList.remove('correct', 'wrong');
-    });
 
     if (selected === correct) {
         element.classList.add('correct');
-        setTimeout(() => {
-            alert("Правильно!");
-        }, 500);
+        options.forEach(opt => {
+            opt.style.pointerEvents = 'none';
+        });
     } else {
         element.classList.add('wrong');
         const correctOption = Array.from(options).find(opt => opt.textContent === String(correct));
-        correctOption.classList.add('correct');
+        if (correctOption) {
+            correctOption.classList.add('correct');
+        }
     }
 }
-
 
 const question1 = {
     question: "В каком году был создан первый программируемый робот?",
@@ -183,25 +179,3 @@ const question12 = {
     options: ["Tesla", "General Motors", "Honda", "Ford"],
     correct: "General Motors"
 };
-
-addQuizQuestion("section1", question1);
-addQuizQuestion("section2", question2);
-addQuizQuestion("section3", question3);
-
-addQuizQuestion("section4", question4);
-addQuizQuestion("section5", question5);
-addQuizQuestion("section6", question6);
-
-addQuizQuestion("section7", question7);
-addQuizQuestion("section8", question8);
-addQuizQuestion("section9", question9);
-
-addQuizQuestion("section10", question10);
-addQuizQuestion("section11", question11);
-addQuizQuestion("section12", question12);
-
-  
-  
-
-
-    
