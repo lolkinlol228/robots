@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Робототехника и Искусственный Интеллект</title>
+    <title>АИС Робототехника и Искусственный Интеллект</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-
+<link href="icon.png" rel="icon" type="png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
@@ -16,9 +16,13 @@
 
     <link href="style.css" rel="stylesheet">
   
- 
+   
+
 </head>
 <body>
+    
+
+
     <script>
       function toggleSection(header) {
     const content = header.nextElementSibling;
@@ -69,7 +73,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
         <div class="container">
             <i class="fas fa-robot me-2" style="color: white; "></i>
-            <a class="navbar-brand" href="#">Робототехника и ИИ</a>
+            <a class="navbar-brand" href="#"> АИС Робототехника и ИИ</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Переключить навигацию">
                 <span class="navbar-toggler-icon"></span>
@@ -90,15 +94,14 @@
         </div>
     </nav>
 
-    <section class="history-section">
+    <section id="summary" class="history-section">
         <div class="section-header">
 
 
-
-            <section id="summary" data-aos="fade-up" style="margin-top: -5%;">
-                <h2 class="section-title"><i class="fas fa-lightbulb icon"></i>О сайте</h2>
+        
+                <h2 class="section-title" ><i class="fas fa-lightbulb icon"></i>О сайте</h2>
                 <div class="decorative-line"></div>
-                <div class="intro-card" style="margin-top: -10%;">
+                <div class="intro-card" >
                     <p class="intro-text">
                         <strong>Робототехника и искусственный интеллект (ИИ)</strong> - это инновационные области, в которых проектирование машин, способных выполнять задачи автономно, сочетается с разработкой интеллектуальных алгоритмов, позволяющих обрабатывать данные и учиться на собственном опыте. Вместе эти технологии меняют отрасли, повышают производительность и изменяют повседневную жизнь, что делает их ключевыми для современных инноваций и экономического роста.
                     </p>
@@ -126,7 +129,7 @@
             </section>
             <section id="history" class="history-section bg-light" data-aos="fade-up">
                 <div class="section-header">
-                    <h2 class="section-title"><i class="fas fa-history icon"></i> История</h2>
+                    <h2 class="section-title" style="margin-top: -200px !important; "><i class="fas fa-history icon"></i> История</h2>
                     <div class="decorative-line"></div>
                 </div>
                 <div class="intro-card">
@@ -239,15 +242,17 @@
                         </div>
                     </div>
                 </div>
+                <div id="section1"></div>
+                <div id="section2"></div>
+                <div id="section3"></div>
+                <div id="section4"></div>
+                <div id="section10"></div>
+                <div id="section12"></div>
             </section>
             
     
     
-        <div id="section2"></div>
-        <div id="section3"></div>
-        <div id="section4"></div>
-        <div id="section10"></div>
-        <div id="section12"></div>
+ 
         <section id="robot-types" class="history-section bg-light" data-aos="fade-up">
             <div class="section-header">
                 <h2 class="section-title"><i class="fas fa-robot icon"></i> Виды робототехники</h2>
@@ -412,14 +417,15 @@
                     </div>
                 </div>
             </div>
+            <div id="section5"></div>
+            <div id="section6"></div>
+            <div id="section7"></div>
+            <div id="section8"></div>
+            <div id="section11"></div>
+            
         </section>        
         
-        <div id="section5"></div>
-        <div id="section6"></div>
-        <div id="section7"></div>
-        <div id="section8"></div>
-        <div id="section11"></div>
-        
+      
         </div>
         </section>
         
@@ -738,6 +744,9 @@
                         <p class="card-text">
                             Регулярный этический аудит систем ИИ необходим для обеспечения справедливости, прозрачности и выявления предвзятости. Такие проверки помогают выявить недостатки и направить необходимые доработки для поддержания этических стандартов в технологиях ИИ.[18]
                         </p>
+
+
+
                         <div class="fact-box">
                             <p class="fact-text">
                                 <em>Интересный факт:</em> Этические аудиты помогают компаниям выявлять и устранять предвзятости в алгоритмах, что способствует созданию справедливых и этичных технологий.
@@ -819,10 +828,11 @@
                     </div>
                 </div>
             </div>
+            <div id="section9"></div>
+        
         </section>
         
-        <div id="section9"></div>
-        
+
         <section id="impact-on-society" class="history-section bg-light" data-aos="fade-up">
             <div class="section-header">
                 <h2 class="section-title"><i class="fas fa-users icon"></i> Воздействие на общество</h2>
@@ -1229,7 +1239,7 @@
 
     <script src="script.js"></script>
     
-<script>    const references = {
+<script>    const references = {    
     1: "https://pioneerindsys.com/the-history-of-robotics-and-automation-a-comprehensive-timeline/",
     2: "https://www.intellspot.com/what-is-robotics/",
     3: "https://keybotic.com/history-of-robotics-a-comprehensive-history-of-evolution-and-innovation/",
