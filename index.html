@@ -1220,9 +1220,30 @@
     <button id="backToTop" title="Наверх" onclick="  window.scrollTo(0, 0); ">
         <i class="fas fa-arrow-up"></i>
     </button>
-        
-   
-  <footer data-aos="fade-up" class="py-5">
+
+    <form id="uniqueContactForm" class="unique-contact-form" onsubmit="return handleSubmit(event)">
+        <h2>Свяжитесь с нами</h2>
+        <div class="form-group">
+            <label for="uniqueName">Ваше имя</label>
+            <input type="text" id="uniqueName" name="from_name" class="form-control" placeholder="Введите ваше имя" required>
+        </div>
+        <div class="form-group">
+            <label for="uniqueEmail">Ваш email</label>
+            <input type="email" id="uniqueEmail" name="from_email" class="form-control" placeholder="Введите ваш email" required>
+        </div>
+        <div class="form-group">
+            <label for="uniqueMessage">Ваше сообщение</label>
+            <textarea id="uniqueMessage" name="message" class="form-control" placeholder="Введите ваше сообщение" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Отправить</button>
+    </form>
+    <div id="uniqueResponseMessage"></div>
+
+
+  
+  
+
+    <footer data-aos="fade-up" class="py-5">
         <div class="container">
             <div class="row">
                 <div class="text-center">
@@ -1264,6 +1285,71 @@
 
 
     <style>
+.unique-contact-form {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.unique-contact-form h2 {
+  margin-bottom: 20px;
+  color: #343a40;
+  text-align: center;
+}
+
+.unique-contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.unique-contact-form .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #495057;
+}
+
+.unique-contact-form .form-group input,
+.unique-contact-form .form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #495057;
+  background-color: #fff;
+}
+
+.unique-contact-form .form-group input:focus,
+.unique-contact-form .form-group textarea:focus {
+  border-color: #80bdff;
+  outline: none;
+}
+
+.unique-contact-form button {
+  width: 100%;
+  padding: 12px 15px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.unique-contact-form button:hover {
+  background-color: #0056b3;
+}
+
+#uniqueResponseMessage {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: #28a745;
+}
+
 
         .social-icons a {
             color: #ffffff;
@@ -1281,12 +1367,81 @@
  
     </style>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+    <script src="script.js" defer></script> 
 
-    <script src="script.js"></script>
+    <script>
+      
+        emailjs.init("JFU3HOnh_LUFRAmn4");
+
+        function handleSubmit(event) {
+            event.preventDefault();
+
+            const templateParams = {
+                from_name: document.getElementById('uniqueName').value.trim(),
+                to_name: "фрезя",
+                from_email: document.getElementById('uniqueEmail').value.trim(),
+                message: document.getElementById('uniqueMessage').value.trim(),
+                reply_to: "isi080356@gmail.com"
+            };
+
+            emailjs.send('service_8lbmcia', 'template_n48ncbi', templateParams)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    const responseMessage = document.getElementById('uniqueResponseMessage');
+                    responseMessage.style.color = '#28a745'; 
+                    responseMessage.innerText = 'Спасибо! Ваше сообщение отправлено.';
+                    document.getElementById('uniqueContactForm').reset(); 
+                }, function(error) {
+                    console.error('FAILED...', error);
+                    const responseMessage = document.getElementById('uniqueResponseMessage');
+                    responseMessage.style.color = '#dc3545';
+                    responseMessage.innerText = 'Произошла ошибка при отправке сообщения: ' + error.text;
+                });
+
+            return false; 
+        }
+    </script>
+ 
+      
+    <script>
+        (function() {
+
+            emailjs.init("JFU3HOnh_LUFRAmn4");
+          
     
+            document.addEventListener('DOMContentLoaded', function() {
+                const form = document.getElementById('uniqueContactForm');
+                const responseMessage = document.getElementById('uniqueResponseMessage');
+    
+                if (!form) {
+                
+                    return;
+                }
+    
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+         
+    
+                    emailjs.sendForm('service_8lbmcia', 'template_n48ncbi', form)
+                        .then(function(response) {
+                           
+                            responseMessage.style.color = '#28a745';
+                            responseMessage.innerText = 'Спасибо! Ваше сообщение отправлено.';
+                            form.reset();
+                        }, function(error) {
+                      
+                            responseMessage.style.color = '#dc3545';
+                            responseMessage.innerText = 'Произошла ошибка при отправке сообщения: ' + error.text;
+                        });
+                }, false);
+            });
+        })();
+    </script>
 <script>    const references = {    
     1: "https://pioneerindsys.com/the-history-of-robotics-and-automation-a-comprehensive-timeline/",
     2: "https://www.intellspot.com/what-is-robotics/",
@@ -1338,5 +1493,6 @@ return match;
 document.addEventListener("DOMContentLoaded", convertReferencesToLinksInBody);
 </script>
 
+    
 </body>
 </html>
